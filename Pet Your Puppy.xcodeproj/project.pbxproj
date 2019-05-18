@@ -12,6 +12,17 @@
 		B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD40229036FB003AB50B /* Main.storyboard */; };
 		B0A0AD44229036FC003AB50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD43229036FC003AB50B /* Assets.xcassets */; };
 		B0A0AD47229036FC003AB50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD45229036FC003AB50B /* LaunchScreen.storyboard */; };
+		B0A0AD562290376A003AB50B /* Dog Touge out 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD532290376A003AB50B /* Dog Touge out 1.png */; };
+		B0A0AD572290376A003AB50B /* Dog Touge out 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD542290376A003AB50B /* Dog Touge out 2.png */; };
+		B0A0AD582290376A003AB50B /* Dog Touge out 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD552290376A003AB50B /* Dog Touge out 3.png */; };
+		B0A0AD5C22903773003AB50B /* Dog Idle 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD5922903773003AB50B /* Dog Idle 2.png */; };
+		B0A0AD5D22903773003AB50B /* Dog Idle 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD5A22903773003AB50B /* Dog Idle 3.png */; };
+		B0A0AD5E22903773003AB50B /* Dog Idle 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD5B22903773003AB50B /* Dog Idle 1.png */; };
+		B0A0AD612290377A003AB50B /* Dog slapped 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD5F2290377A003AB50B /* Dog slapped 2.png */; };
+		B0A0AD622290377A003AB50B /* Dog slapped 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD602290377A003AB50B /* Dog slapped 1.png */; };
+		B0A0AD6422904064003AB50B /* dog panting.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD6322904064003AB50B /* dog panting.wav */; };
+		B0A0AD662290406F003AB50B /* Slap.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD652290406F003AB50B /* Slap.wav */; };
+		B0A0AD6822904079003AB50B /* Dog_and_Pony_Show.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD6722904079003AB50B /* Dog_and_Pony_Show.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		B0A0AD43229036FC003AB50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A0AD46229036FC003AB50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0A0AD48229036FC003AB50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0A0AD532290376A003AB50B /* Dog Touge out 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 1.png"; sourceTree = "<group>"; };
+		B0A0AD542290376A003AB50B /* Dog Touge out 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 2.png"; sourceTree = "<group>"; };
+		B0A0AD552290376A003AB50B /* Dog Touge out 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 3.png"; sourceTree = "<group>"; };
+		B0A0AD5922903773003AB50B /* Dog Idle 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Idle 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Idle 2.png"; sourceTree = "<group>"; };
+		B0A0AD5A22903773003AB50B /* Dog Idle 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Idle 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Idle 3.png"; sourceTree = "<group>"; };
+		B0A0AD5B22903773003AB50B /* Dog Idle 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Idle 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Idle 1.png"; sourceTree = "<group>"; };
+		B0A0AD5F2290377A003AB50B /* Dog slapped 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog slapped 2.png"; path = "../../../../../Assets/Updated 1.5/Dog slapped 2.png"; sourceTree = "<group>"; };
+		B0A0AD602290377A003AB50B /* Dog slapped 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog slapped 1.png"; path = "../../../../../Assets/Updated 1.5/Dog slapped 1.png"; sourceTree = "<group>"; };
+		B0A0AD6322904064003AB50B /* dog panting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dog panting.wav"; path = "../../../../Downloads/dog panting.wav"; sourceTree = "<group>"; };
+		B0A0AD652290406F003AB50B /* Slap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Slap.wav; path = ../../../../Downloads/Slap.wav; sourceTree = "<group>"; };
+		B0A0AD6722904079003AB50B /* Dog_and_Pony_Show.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dog_and_Pony_Show.mp3; path = ../../../../Downloads/Dog_and_Pony_Show.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +76,11 @@
 		B0A0AD3B229036FB003AB50B /* Pet Your Puppy */ = {
 			isa = PBXGroup;
 			children = (
+				B0A0AD4E2290370E003AB50B /* Image-Animation */,
 				B0A0AD3C229036FB003AB50B /* AppDelegate.swift */,
+				B0A0AD6322904064003AB50B /* dog panting.wav */,
+				B0A0AD652290406F003AB50B /* Slap.wav */,
+				B0A0AD6722904079003AB50B /* Dog_and_Pony_Show.mp3 */,
 				B0A0AD3E229036FB003AB50B /* ViewController.swift */,
 				B0A0AD40229036FB003AB50B /* Main.storyboard */,
 				B0A0AD43229036FC003AB50B /* Assets.xcassets */,
@@ -62,6 +88,53 @@
 				B0A0AD48229036FC003AB50B /* Info.plist */,
 			);
 			path = "Pet Your Puppy";
+			sourceTree = "<group>";
+		};
+		B0A0AD4E2290370E003AB50B /* Image-Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0AD4F2290373A003AB50B /* Sprites */,
+			);
+			path = "Image-Animation";
+			sourceTree = "<group>";
+		};
+		B0A0AD4F2290373A003AB50B /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0AD522290375C003AB50B /* Dog-Slapped */,
+				B0A0AD512290374F003AB50B /* Dog-Happy */,
+				B0A0AD5022903743003AB50B /* Dog-Idle */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		B0A0AD5022903743003AB50B /* Dog-Idle */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0AD5B22903773003AB50B /* Dog Idle 1.png */,
+				B0A0AD5922903773003AB50B /* Dog Idle 2.png */,
+				B0A0AD5A22903773003AB50B /* Dog Idle 3.png */,
+			);
+			path = "Dog-Idle";
+			sourceTree = "<group>";
+		};
+		B0A0AD512290374F003AB50B /* Dog-Happy */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0AD532290376A003AB50B /* Dog Touge out 1.png */,
+				B0A0AD542290376A003AB50B /* Dog Touge out 2.png */,
+				B0A0AD552290376A003AB50B /* Dog Touge out 3.png */,
+			);
+			path = "Dog-Happy";
+			sourceTree = "<group>";
+		};
+		B0A0AD522290375C003AB50B /* Dog-Slapped */ = {
+			isa = PBXGroup;
+			children = (
+				B0A0AD602290377A003AB50B /* Dog slapped 1.png */,
+				B0A0AD5F2290377A003AB50B /* Dog slapped 2.png */,
+			);
+			path = "Dog-Slapped";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +195,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A0AD6822904079003AB50B /* Dog_and_Pony_Show.mp3 in Resources */,
 				B0A0AD47229036FC003AB50B /* LaunchScreen.storyboard in Resources */,
+				B0A0AD582290376A003AB50B /* Dog Touge out 3.png in Resources */,
+				B0A0AD622290377A003AB50B /* Dog slapped 1.png in Resources */,
+				B0A0AD572290376A003AB50B /* Dog Touge out 2.png in Resources */,
+				B0A0AD612290377A003AB50B /* Dog slapped 2.png in Resources */,
+				B0A0AD5C22903773003AB50B /* Dog Idle 2.png in Resources */,
+				B0A0AD5D22903773003AB50B /* Dog Idle 3.png in Resources */,
+				B0A0AD562290376A003AB50B /* Dog Touge out 1.png in Resources */,
 				B0A0AD44229036FC003AB50B /* Assets.xcassets in Resources */,
 				B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */,
+				B0A0AD662290406F003AB50B /* Slap.wav in Resources */,
+				B0A0AD6422904064003AB50B /* dog panting.wav in Resources */,
+				B0A0AD5E22903773003AB50B /* Dog Idle 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
