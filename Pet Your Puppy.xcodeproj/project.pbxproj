@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B05B0C88229133A3001217D5 /* Dog Touge out 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C85229133A3001217D5 /* Dog Touge out 3.png */; };
+		B05B0C89229133A3001217D5 /* Dog Touge out 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C86229133A3001217D5 /* Dog Touge out 1.png */; };
+		B05B0C8A229133A3001217D5 /* Dog Touge out 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C87229133A3001217D5 /* Dog Touge out 2.png */; };
+		B05B0C942291372F001217D5 /* Dog Bark 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C8B2291372F001217D5 /* Dog Bark 1.png */; };
+		B05B0C952291372F001217D5 /* Dog Bark 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C8C2291372F001217D5 /* Dog Bark 2.png */; };
+		B05B0C962291372F001217D5 /* Dog Bark 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C8D2291372F001217D5 /* Dog Bark 4.png */; };
+		B05B0C972291372F001217D5 /* Dog Bark 9.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C8E2291372F001217D5 /* Dog Bark 9.png */; };
+		B05B0C982291372F001217D5 /* Dog Bark 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C8F2291372F001217D5 /* Dog Bark 6.png */; };
+		B05B0C992291372F001217D5 /* Dog Bark 7.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C902291372F001217D5 /* Dog Bark 7.png */; };
+		B05B0C9A2291372F001217D5 /* Dog Bark 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C912291372F001217D5 /* Dog Bark 5.png */; };
+		B05B0C9B2291372F001217D5 /* Dog Bark 8.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C922291372F001217D5 /* Dog Bark 8.png */; };
+		B05B0C9C2291372F001217D5 /* Dog Bark 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C932291372F001217D5 /* Dog Bark 3.png */; };
+		B05B0CA222913E88001217D5 /* puppy_bark2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */; };
+		B05B0CAD229150D4001217D5 /* Dog and Pony Show.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CAC229150D3001217D5 /* Dog and Pony Show.mp3 */; };
+		B05B0CB12291521B001217D5 /* heart 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CAE2291521B001217D5 /* heart 2.png */; };
+		B05B0CB22291521B001217D5 /* heart 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CAF2291521B001217D5 /* heart 1.png */; };
+		B05B0CB32291521B001217D5 /* heart 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB02291521B001217D5 /* heart 3.png */; };
+		B05B0CB522915226001217D5 /* heart 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB422915226001217D5 /* heart 4.png */; };
+		B05B0CB722915285001217D5 /* Bubbles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB622915285001217D5 /* Bubbles.mp3 */; };
 		B0A0AD3D229036FB003AB50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3C229036FB003AB50B /* AppDelegate.swift */; };
 		B0A0AD3F229036FB003AB50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3E229036FB003AB50B /* ViewController.swift */; };
 		B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD40229036FB003AB50B /* Main.storyboard */; };
 		B0A0AD44229036FC003AB50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD43229036FC003AB50B /* Assets.xcassets */; };
 		B0A0AD47229036FC003AB50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD45229036FC003AB50B /* LaunchScreen.storyboard */; };
-		B0A0AD562290376A003AB50B /* Dog Touge out 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD532290376A003AB50B /* Dog Touge out 1.png */; };
-		B0A0AD572290376A003AB50B /* Dog Touge out 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD542290376A003AB50B /* Dog Touge out 2.png */; };
-		B0A0AD582290376A003AB50B /* Dog Touge out 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD552290376A003AB50B /* Dog Touge out 3.png */; };
 		B0A0AD5C22903773003AB50B /* Dog Idle 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD5922903773003AB50B /* Dog Idle 2.png */; };
 		B0A0AD5D22903773003AB50B /* Dog Idle 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD5A22903773003AB50B /* Dog Idle 3.png */; };
 		B0A0AD5E22903773003AB50B /* Dog Idle 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD5B22903773003AB50B /* Dog Idle 1.png */; };
@@ -22,19 +38,28 @@
 		B0A0AD622290377A003AB50B /* Dog slapped 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD602290377A003AB50B /* Dog slapped 1.png */; };
 		B0A0AD6422904064003AB50B /* dog panting.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD6322904064003AB50B /* dog panting.wav */; };
 		B0A0AD662290406F003AB50B /* Slap.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD652290406F003AB50B /* Slap.wav */; };
-		B0A0AD6822904079003AB50B /* Dog_and_Pony_Show.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD6722904079003AB50B /* Dog_and_Pony_Show.mp3 */; };
-		B0B8B82D229104F00051A1F5 /* Dog Bark 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B824229104F00051A1F5 /* Dog Bark 3.png */; };
-		B0B8B82E229104F00051A1F5 /* Dog Bark 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B825229104F00051A1F5 /* Dog Bark 2.png */; };
-		B0B8B82F229104F00051A1F5 /* Dog Bark 9.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B826229104F00051A1F5 /* Dog Bark 9.png */; };
-		B0B8B830229104F00051A1F5 /* Dog Bark 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B827229104F00051A1F5 /* Dog Bark 5.png */; };
-		B0B8B831229104F00051A1F5 /* Dog Bark 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B828229104F00051A1F5 /* Dog Bark 6.png */; };
-		B0B8B832229104F00051A1F5 /* Dog Bark 8.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B829229104F00051A1F5 /* Dog Bark 8.png */; };
-		B0B8B833229104F00051A1F5 /* Dog Bark 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B82A229104F00051A1F5 /* Dog Bark 1.png */; };
-		B0B8B834229104F00051A1F5 /* Dog Bark 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B82B229104F00051A1F5 /* Dog Bark 4.png */; };
-		B0B8B835229104F00051A1F5 /* Dog Bark 7.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B8B82C229104F00051A1F5 /* Dog Bark 7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B05B0C85229133A3001217D5 /* Dog Touge out 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 3.png"; sourceTree = "<group>"; };
+		B05B0C86229133A3001217D5 /* Dog Touge out 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 1.png"; sourceTree = "<group>"; };
+		B05B0C87229133A3001217D5 /* Dog Touge out 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 2.png"; sourceTree = "<group>"; };
+		B05B0C8B2291372F001217D5 /* Dog Bark 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 1.png"; sourceTree = "<group>"; };
+		B05B0C8C2291372F001217D5 /* Dog Bark 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 2.png"; sourceTree = "<group>"; };
+		B05B0C8D2291372F001217D5 /* Dog Bark 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 4.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 4.png"; sourceTree = "<group>"; };
+		B05B0C8E2291372F001217D5 /* Dog Bark 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 9.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 9.png"; sourceTree = "<group>"; };
+		B05B0C8F2291372F001217D5 /* Dog Bark 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 6.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 6.png"; sourceTree = "<group>"; };
+		B05B0C902291372F001217D5 /* Dog Bark 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 7.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 7.png"; sourceTree = "<group>"; };
+		B05B0C912291372F001217D5 /* Dog Bark 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 5.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 5.png"; sourceTree = "<group>"; };
+		B05B0C922291372F001217D5 /* Dog Bark 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 8.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 8.png"; sourceTree = "<group>"; };
+		B05B0C932291372F001217D5 /* Dog Bark 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 3.png"; sourceTree = "<group>"; };
+		B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = puppy_bark2.mp3; path = ../../../puppy_bark2.mp3; sourceTree = "<group>"; };
+		B05B0CAC229150D3001217D5 /* Dog and Pony Show.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dog and Pony Show.mp3"; path = "../../Puppyness/Puppyness/Dog and Pony Show.mp3"; sourceTree = "<group>"; };
+		B05B0CAE2291521B001217D5 /* heart 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 2.png"; path = "../../../../../Assets/Updated 1.5/heart 2.png"; sourceTree = "<group>"; };
+		B05B0CAF2291521B001217D5 /* heart 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 1.png"; path = "../../../../../Assets/Updated 1.5/heart 1.png"; sourceTree = "<group>"; };
+		B05B0CB02291521B001217D5 /* heart 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 3.png"; path = "../../../../../Assets/Updated 1.5/heart 3.png"; sourceTree = "<group>"; };
+		B05B0CB422915226001217D5 /* heart 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 4.png"; path = "../../../../../Assets/Updated 1.5/heart 4.png"; sourceTree = "<group>"; };
+		B05B0CB622915285001217D5 /* Bubbles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bubbles.mp3; path = ../../../../Downloads/Bubbles.mp3; sourceTree = "<group>"; };
 		B0A0AD39229036FB003AB50B /* Pet Your Puppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Your Puppy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0AD3C229036FB003AB50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A0AD3E229036FB003AB50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,9 +67,6 @@
 		B0A0AD43229036FC003AB50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A0AD46229036FC003AB50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0A0AD48229036FC003AB50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0A0AD532290376A003AB50B /* Dog Touge out 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 1.png"; sourceTree = "<group>"; };
-		B0A0AD542290376A003AB50B /* Dog Touge out 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 2.png"; sourceTree = "<group>"; };
-		B0A0AD552290376A003AB50B /* Dog Touge out 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Touge out 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Touge out 3.png"; sourceTree = "<group>"; };
 		B0A0AD5922903773003AB50B /* Dog Idle 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Idle 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Idle 2.png"; sourceTree = "<group>"; };
 		B0A0AD5A22903773003AB50B /* Dog Idle 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Idle 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Idle 3.png"; sourceTree = "<group>"; };
 		B0A0AD5B22903773003AB50B /* Dog Idle 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Idle 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Idle 1.png"; sourceTree = "<group>"; };
@@ -52,16 +74,6 @@
 		B0A0AD602290377A003AB50B /* Dog slapped 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog slapped 1.png"; path = "../../../../../Assets/Updated 1.5/Dog slapped 1.png"; sourceTree = "<group>"; };
 		B0A0AD6322904064003AB50B /* dog panting.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "dog panting.wav"; path = "../../../../Downloads/dog panting.wav"; sourceTree = "<group>"; };
 		B0A0AD652290406F003AB50B /* Slap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Slap.wav; path = ../../../../Downloads/Slap.wav; sourceTree = "<group>"; };
-		B0A0AD6722904079003AB50B /* Dog_and_Pony_Show.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dog_and_Pony_Show.mp3; path = ../../../../Downloads/Dog_and_Pony_Show.mp3; sourceTree = "<group>"; };
-		B0B8B824229104F00051A1F5 /* Dog Bark 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 3.png"; sourceTree = "<group>"; };
-		B0B8B825229104F00051A1F5 /* Dog Bark 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 2.png"; sourceTree = "<group>"; };
-		B0B8B826229104F00051A1F5 /* Dog Bark 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 9.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 9.png"; sourceTree = "<group>"; };
-		B0B8B827229104F00051A1F5 /* Dog Bark 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 5.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 5.png"; sourceTree = "<group>"; };
-		B0B8B828229104F00051A1F5 /* Dog Bark 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 6.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 6.png"; sourceTree = "<group>"; };
-		B0B8B829229104F00051A1F5 /* Dog Bark 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 8.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 8.png"; sourceTree = "<group>"; };
-		B0B8B82A229104F00051A1F5 /* Dog Bark 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 1.png"; sourceTree = "<group>"; };
-		B0B8B82B229104F00051A1F5 /* Dog Bark 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 4.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 4.png"; sourceTree = "<group>"; };
-		B0B8B82C229104F00051A1F5 /* Dog Bark 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 7.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 7.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B05B0CA322914E03001217D5 /* Heart */ = {
+			isa = PBXGroup;
+			children = (
+				B05B0CAF2291521B001217D5 /* heart 1.png */,
+				B05B0CAE2291521B001217D5 /* heart 2.png */,
+				B05B0CB02291521B001217D5 /* heart 3.png */,
+				B05B0CB422915226001217D5 /* heart 4.png */,
+			);
+			path = Heart;
+			sourceTree = "<group>";
+		};
 		B0A0AD30229036FB003AB50B = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +119,11 @@
 			children = (
 				B0A0AD4E2290370E003AB50B /* Image-Animation */,
 				B0A0AD3C229036FB003AB50B /* AppDelegate.swift */,
+				B05B0CB622915285001217D5 /* Bubbles.mp3 */,
+				B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */,
+				B05B0CAC229150D3001217D5 /* Dog and Pony Show.mp3 */,
 				B0A0AD6322904064003AB50B /* dog panting.wav */,
 				B0A0AD652290406F003AB50B /* Slap.wav */,
-				B0A0AD6722904079003AB50B /* Dog_and_Pony_Show.mp3 */,
 				B0A0AD3E229036FB003AB50B /* ViewController.swift */,
 				B0A0AD40229036FB003AB50B /* Main.storyboard */,
 				B0A0AD43229036FC003AB50B /* Assets.xcassets */,
@@ -119,6 +144,7 @@
 		B0A0AD4F2290373A003AB50B /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				B05B0CA322914E03001217D5 /* Heart */,
 				B0B8B8172290F9FD0051A1F5 /* Dog-Bark */,
 				B0A0AD522290375C003AB50B /* Dog-Slapped */,
 				B0A0AD512290374F003AB50B /* Dog-Happy */,
@@ -140,9 +166,9 @@
 		B0A0AD512290374F003AB50B /* Dog-Happy */ = {
 			isa = PBXGroup;
 			children = (
-				B0A0AD532290376A003AB50B /* Dog Touge out 1.png */,
-				B0A0AD542290376A003AB50B /* Dog Touge out 2.png */,
-				B0A0AD552290376A003AB50B /* Dog Touge out 3.png */,
+				B05B0C86229133A3001217D5 /* Dog Touge out 1.png */,
+				B05B0C87229133A3001217D5 /* Dog Touge out 2.png */,
+				B05B0C85229133A3001217D5 /* Dog Touge out 3.png */,
 			);
 			path = "Dog-Happy";
 			sourceTree = "<group>";
@@ -159,15 +185,15 @@
 		B0B8B8172290F9FD0051A1F5 /* Dog-Bark */ = {
 			isa = PBXGroup;
 			children = (
-				B0B8B82A229104F00051A1F5 /* Dog Bark 1.png */,
-				B0B8B825229104F00051A1F5 /* Dog Bark 2.png */,
-				B0B8B824229104F00051A1F5 /* Dog Bark 3.png */,
-				B0B8B82B229104F00051A1F5 /* Dog Bark 4.png */,
-				B0B8B827229104F00051A1F5 /* Dog Bark 5.png */,
-				B0B8B828229104F00051A1F5 /* Dog Bark 6.png */,
-				B0B8B82C229104F00051A1F5 /* Dog Bark 7.png */,
-				B0B8B829229104F00051A1F5 /* Dog Bark 8.png */,
-				B0B8B826229104F00051A1F5 /* Dog Bark 9.png */,
+				B05B0C8B2291372F001217D5 /* Dog Bark 1.png */,
+				B05B0C8C2291372F001217D5 /* Dog Bark 2.png */,
+				B05B0C932291372F001217D5 /* Dog Bark 3.png */,
+				B05B0C8D2291372F001217D5 /* Dog Bark 4.png */,
+				B05B0C912291372F001217D5 /* Dog Bark 5.png */,
+				B05B0C8F2291372F001217D5 /* Dog Bark 6.png */,
+				B05B0C902291372F001217D5 /* Dog Bark 7.png */,
+				B05B0C922291372F001217D5 /* Dog Bark 8.png */,
+				B05B0C8E2291372F001217D5 /* Dog Bark 9.png */,
 			);
 			path = "Dog-Bark";
 			sourceTree = "<group>";
@@ -230,29 +256,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B8B830229104F00051A1F5 /* Dog Bark 5.png in Resources */,
-				B0A0AD6822904079003AB50B /* Dog_and_Pony_Show.mp3 in Resources */,
+				B05B0CB32291521B001217D5 /* heart 3.png in Resources */,
+				B05B0C9C2291372F001217D5 /* Dog Bark 3.png in Resources */,
 				B0A0AD47229036FC003AB50B /* LaunchScreen.storyboard in Resources */,
-				B0A0AD582290376A003AB50B /* Dog Touge out 3.png in Resources */,
+				B05B0CB12291521B001217D5 /* heart 2.png in Resources */,
 				B0A0AD622290377A003AB50B /* Dog slapped 1.png in Resources */,
-				B0A0AD572290376A003AB50B /* Dog Touge out 2.png in Resources */,
-				B0B8B82D229104F00051A1F5 /* Dog Bark 3.png in Resources */,
 				B0A0AD612290377A003AB50B /* Dog slapped 2.png in Resources */,
 				B0A0AD5C22903773003AB50B /* Dog Idle 2.png in Resources */,
 				B0A0AD5D22903773003AB50B /* Dog Idle 3.png in Resources */,
-				B0A0AD562290376A003AB50B /* Dog Touge out 1.png in Resources */,
 				B0A0AD44229036FC003AB50B /* Assets.xcassets in Resources */,
+				B05B0CA222913E88001217D5 /* puppy_bark2.mp3 in Resources */,
 				B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */,
-				B0B8B833229104F00051A1F5 /* Dog Bark 1.png in Resources */,
-				B0B8B82F229104F00051A1F5 /* Dog Bark 9.png in Resources */,
-				B0B8B834229104F00051A1F5 /* Dog Bark 4.png in Resources */,
-				B0B8B831229104F00051A1F5 /* Dog Bark 6.png in Resources */,
-				B0B8B835229104F00051A1F5 /* Dog Bark 7.png in Resources */,
-				B0B8B832229104F00051A1F5 /* Dog Bark 8.png in Resources */,
+				B05B0C972291372F001217D5 /* Dog Bark 9.png in Resources */,
+				B05B0C89229133A3001217D5 /* Dog Touge out 1.png in Resources */,
+				B05B0CB722915285001217D5 /* Bubbles.mp3 in Resources */,
+				B05B0C992291372F001217D5 /* Dog Bark 7.png in Resources */,
+				B05B0C88229133A3001217D5 /* Dog Touge out 3.png in Resources */,
+				B05B0C942291372F001217D5 /* Dog Bark 1.png in Resources */,
 				B0A0AD662290406F003AB50B /* Slap.wav in Resources */,
-				B0B8B82E229104F00051A1F5 /* Dog Bark 2.png in Resources */,
 				B0A0AD6422904064003AB50B /* dog panting.wav in Resources */,
+				B05B0CB522915226001217D5 /* heart 4.png in Resources */,
+				B05B0CAD229150D4001217D5 /* Dog and Pony Show.mp3 in Resources */,
+				B05B0C982291372F001217D5 /* Dog Bark 6.png in Resources */,
+				B05B0C952291372F001217D5 /* Dog Bark 2.png in Resources */,
+				B05B0C962291372F001217D5 /* Dog Bark 4.png in Resources */,
+				B05B0C9A2291372F001217D5 /* Dog Bark 5.png in Resources */,
+				B05B0C8A229133A3001217D5 /* Dog Touge out 2.png in Resources */,
 				B0A0AD5E22903773003AB50B /* Dog Idle 1.png in Resources */,
+				B05B0C9B2291372F001217D5 /* Dog Bark 8.png in Resources */,
+				B05B0CB22291521B001217D5 /* heart 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

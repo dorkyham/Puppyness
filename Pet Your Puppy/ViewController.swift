@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var tapRecognizer: UITapGestureRecognizer!
     
+    @IBOutlet var heart_image_view: UIImageView!
     @IBOutlet var headSlappedBoundary: UIView!
     @IBOutlet var gestureBoundary: UIView!
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
@@ -22,17 +24,23 @@ class ViewController: UIViewController {
     var happy_images : [UIImage]!
     var slapped_images : [UIImage]!
     var bark_images : [UIImage]!
+    var heart_images : [UIImage]!
     
+    var BarkEffectPlayer = AVAudioPlayer()
+    var BubbleEffectPlayer = AVAudioPlayer()
     var AudioPlayer = AVAudioPlayer()
     var PantEffectPlayer = AVAudioPlayer()
     var SlapEffectPlayer = AVAudioPlayer()
     //sound
     let dog_pant = NSURL(fileURLWithPath: Bundle.main.path(forResource: "dog panting", ofType: "wav")!)
     let slap =  NSURL(fileURLWithPath: Bundle.main.path(forResource: "Slap", ofType: "wav")!)
+    let bark = NSURL(fileURLWithPath: Bundle.main.path(forResource: "puppy_bark2", ofType: "mp3")!)
+    let bubble = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Bubbles", ofType: "mp3")!)
     var backgroundAnimated : Void!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        heart_images = createImageArray(total: 4, imagePrefix: "heart")
         idle_images = createImageArray(total: 3, imagePrefix: "Dog Idle")
         happy_images = createImageArray(total: 3, imagePrefix: "Dog Touge out")
         slapped_images = createImageArray(total: 2, imagePrefix: "Dog slapped")
@@ -44,12 +52,14 @@ class ViewController: UIViewController {
     }
     
     func playSong(){
-        let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Dog_and_Pony_Show", ofType: "mp3")!)
+        let AssortedMusics = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Dog and Pony Show", ofType: "mp3")!)
         AudioPlayer = try! AVAudioPlayer(contentsOf: AssortedMusics as URL)
         AudioPlayer.prepareToPlay()
         AudioPlayer.numberOfLoops = -1
         AudioPlayer.play()
         
+        BubbleEffectPlayer = try! AVAudioPlayer(contentsOf: bubble as URL)
+        BarkEffectPlayer = try! AVAudioPlayer(contentsOf: bark as URL)
         PantEffectPlayer = try! AVAudioPlayer(contentsOf: dog_pant as URL)
         
         SlapEffectPlayer = try! AVAudioPlayer(contentsOf: slap as URL)
@@ -83,9 +93,8 @@ class ViewController: UIViewController {
     
     func animateBark(imageView : UIImageView, images : [UIImage]){
         imageView.animationImages = images
-        imageView.animationDuration = 1
+        imageView.animationDuration = 0.7
         imageView.animationRepeatCount = 0
-        imageView.isUserInteractionEnabled = true
         imageView.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
         imageView.stopAnimating()
@@ -107,46 +116,43 @@ class ViewController: UIViewController {
     }
     
     @objc func handlePan(rub : UIPanGestureRecognizer){
-        let velocity = rub.velocity(in: self.view)
-        
+        var completion : Bool = false
         switch rub.state {
         case .began:
-            let magnitude = sqrt((velocity.x * velocity.x) + (velocity.y * velocity.y))
-            let rubMultiplier = magnitude / 8
-            print("magnitude: \(magnitude), rubMultiplier: \(rubMultiplier)")
-            // 2
-            let rubFactor = 0.1 * rubMultiplier
             animate(imageView: dog_image_view, images: happy_images)
             PantEffectPlayer.prepareToPlay()
             PantEffectPlayer.numberOfLoops = -1
             PantEffectPlayer.play()
-            backgroundAnimated = UIView.animate(withDuration:  Double(rubFactor - 1), delay: 0, options: .transitionCrossDissolve, animations: {
+            backgroundAnimated = UIView.animate(withDuration:  4, delay: 0, options: .transitionCrossDissolve, animations: {
                 self.view.backgroundColor = #colorLiteral(red: 0.9609596133, green: 0.5441862345, blue: 0.5523681641, alpha: 1)
             }, completion: {
                 (value: Bool) in
+                completion = true
                 self.PantEffectPlayer.pause()
+                self.BarkEffectPlayer.play()
                 self.animateBark(imageView: self.dog_image_view, images: self.bark_images)
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.BubbleEffectPlayer.play()
+                self.animate(imageView:  self.heart_image_view, images: self.heart_images)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
                     self.backgroundAnimated = UIView.animate(withDuration: 3, delay: 0, options: .transitionCrossDissolve, animations: {
-                        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-                    }, completion: nil);
-                    rub.state = .ended
+                        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil
+                    )
+                    self.heart_image_view.stopAnimating()
+                    self.animate(imageView: self.dog_image_view, images: self.idle_images)
                 }
             })
             break
         case .changed: break
         case .ended:
+            PantEffectPlayer.pause()
+            if !completion{
             animate(imageView: dog_image_view, images: idle_images)
-                 break
-        case .possible: break
-        case .cancelled:
-            self.PantEffectPlayer.pause()
-            animate(imageView: dog_image_view, images: idle_images)
-            backgroundAnimated = UIView.animate(withDuration: 2, delay: 0, options: .transitionCrossDissolve, animations: {
-                self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            }, completion: nil);
+            backgroundAnimated = UIView.animate(withDuration: 3, delay: 0, options: .transitionCrossDissolve, animations: {
+                    self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
+            }
             break
+        case .possible: break
+        case .cancelled: break
         case .failed: break
         @unknown default: break
         }

@@ -26,6 +26,10 @@
                                 <rect key="frame" x="111" y="316" width="180" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aka-K6-1nG">
+                                <rect key="frame" x="-6" y="0.0" width="420" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,6 +37,7 @@
                     <connections>
                         <outlet property="dog_image_view" destination="Z7e-IM-Upn" id="SPZ-AV-7Ft"/>
                         <outlet property="headSlappedBoundary" destination="T8h-cA-wqk" id="Oxv-af-spg"/>
+                        <outlet property="heart_image_view" destination="Aka-K6-1nG" id="n0V-70-aKn"/>
                         <outlet property="panRecognizer" destination="sqa-x4-fy4" id="RJe-uS-fI6"/>
                         <outlet property="tapRecognizer" destination="gTB-Ev-s68" id="jec-Rv-8hg"/>
                     </connections>
