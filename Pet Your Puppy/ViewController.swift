@@ -36,7 +36,8 @@ class ViewController: UIViewController {
     let slap =  NSURL(fileURLWithPath: Bundle.main.path(forResource: "Slap", ofType: "wav")!)
     let bark = NSURL(fileURLWithPath: Bundle.main.path(forResource: "puppy_bark2", ofType: "mp3")!)
     let bubble = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Bubbles", ofType: "mp3")!)
-    var backgroundAnimated : Void!
+    var backgroundToPinkAnimated : Void!
+    var backgroundToWhiteAnimated : Void!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,39 +117,45 @@ class ViewController: UIViewController {
     }
     
     @objc func handlePan(rub : UIPanGestureRecognizer){
-        var completion : Bool = false
+        let start : Double = Double(DispatchTime.now().uptimeNanoseconds)
+        var end : Double = 0
+        var time_interval : Double
         switch rub.state {
         case .began:
             animate(imageView: dog_image_view, images: happy_images)
             PantEffectPlayer.prepareToPlay()
             PantEffectPlayer.numberOfLoops = -1
             PantEffectPlayer.play()
-            backgroundAnimated = UIView.animate(withDuration:  4, delay: 0, options: .transitionCrossDissolve, animations: {
+            backgroundToPinkAnimated = UIView.animate(withDuration:  4, delay: 0, options: .transitionCrossDissolve, animations: {
                 self.view.backgroundColor = #colorLiteral(red: 0.9609596133, green: 0.5441862345, blue: 0.5523681641, alpha: 1)
             }, completion: {
-                (value: Bool) in
-                completion = true
-                self.PantEffectPlayer.pause()
-                self.BarkEffectPlayer.play()
-                self.animateBark(imageView: self.dog_image_view, images: self.bark_images)
-                self.BubbleEffectPlayer.play()
-                self.animate(imageView:  self.heart_image_view, images: self.heart_images)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
-                    self.backgroundAnimated = UIView.animate(withDuration: 3, delay: 0, options: .transitionCrossDissolve, animations: {
-                        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil
-                    )
-                    self.heart_image_view.stopAnimating()
-                    self.animate(imageView: self.dog_image_view, images: self.idle_images)
-                }
-            })
+               (finished: Bool) in
+                    rub.state = .ended
+            });
             break
         case .changed: break
         case .ended:
+            end = Double(DispatchTime.now().uptimeNanoseconds)
+            time_interval = end - start
+            if time_interval >= 4 {
+                self.PantEffectPlayer.pause()
+                self.animateBark(imageView: self.dog_image_view, images: self.bark_images)
+                self.BarkEffectPlayer.play()
+                self.animate(imageView: self.heart_image_view, images: self.heart_images)
+                self.BubbleEffectPlayer.play()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.animate(imageView: self.dog_image_view, images: self.idle_images)
+                    
+                    self.backgroundToWhiteAnimated = UIView.animate(withDuration: 3, delay: 0, options: .transitionCrossDissolve, animations: {
+                        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
+                    self.BubbleEffectPlayer.pause()
+                    self.heart_image_view.stopAnimating()
+            }
+            }else{
             PantEffectPlayer.pause()
-            if !completion{
             animate(imageView: dog_image_view, images: idle_images)
-            backgroundAnimated = UIView.animate(withDuration: 3, delay: 0, options: .transitionCrossDissolve, animations: {
-                    self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
+            backgroundToWhiteAnimated = UIView.animate(withDuration:3, delay: 0, options: .transitionCrossDissolve, animations: {
+                self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
             }
             break
         case .possible: break
