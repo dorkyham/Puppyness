@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     var idle_images : [UIImage]!
     var happy_images : [UIImage]!
     var slapped_images : [UIImage]!
+    var bark_images : [UIImage]!
     
     var AudioPlayer = AVAudioPlayer()
     var PantEffectPlayer = AVAudioPlayer()
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         idle_images = createImageArray(total: 3, imagePrefix: "Dog Idle")
         happy_images = createImageArray(total: 3, imagePrefix: "Dog Touge out")
         slapped_images = createImageArray(total: 2, imagePrefix: "Dog slapped")
+        bark_images = createImageArray(total: 9, imagePrefix: "Dog Bark")
         animate(imageView: dog_image_view, images: idle_images)
         addTapGesture(view: headSlappedBoundary)
         addPanGesture(view: dog_image_view)
@@ -66,21 +68,29 @@ class ViewController: UIViewController {
     }
 
     func animate(imageView : UIImageView, images : [UIImage]){
-        dog_image_view.animationImages = images
-        dog_image_view.animationDuration = 0.4
-        dog_image_view.animationRepeatCount = 0
-        dog_image_view.startAnimating()
+        imageView.animationImages = images
+        imageView.animationDuration = 0.4
+        imageView.animationRepeatCount = 0
+        imageView.startAnimating()
     }
     
     func animateReaction(imageView : UIImageView, images : [UIImage]){
-        dog_image_view.animationImages = images
-        dog_image_view.animationDuration = 0.2
-        dog_image_view.animationRepeatCount = 0
-        dog_image_view.isUserInteractionEnabled = true
-        dog_image_view.startAnimating()
+        imageView.animationImages = images
+        imageView.animationDuration = 0.2
+        imageView.animationRepeatCount = 0
+        imageView.startAnimating()
     }
     
-    
+    func animateBark(imageView : UIImageView, images : [UIImage]){
+        imageView.animationImages = images
+        imageView.animationDuration = 1
+        imageView.animationRepeatCount = 0
+        imageView.isUserInteractionEnabled = true
+        imageView.startAnimating()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        imageView.stopAnimating()
+        }
+    }
     
     func addPanGesture(view : UIImageView){
         panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(rub:)));
@@ -102,7 +112,7 @@ class ViewController: UIViewController {
         switch rub.state {
         case .began:
             let magnitude = sqrt((velocity.x * velocity.x) + (velocity.y * velocity.y))
-            let rubMultiplier = magnitude / 5
+            let rubMultiplier = magnitude / 8
             print("magnitude: \(magnitude), rubMultiplier: \(rubMultiplier)")
             // 2
             let rubFactor = 0.1 * rubMultiplier
@@ -111,22 +121,32 @@ class ViewController: UIViewController {
             PantEffectPlayer.numberOfLoops = -1
             PantEffectPlayer.play()
             backgroundAnimated = UIView.animate(withDuration:  Double(rubFactor - 1), delay: 0, options: .transitionCrossDissolve, animations: {
-                self.view.backgroundColor = #colorLiteral(red: 1, green: 0.6257035136, blue: 0.6577243209, alpha: 1)
+                self.view.backgroundColor = #colorLiteral(red: 0.9609596133, green: 0.5441862345, blue: 0.5523681641, alpha: 1)
             }, completion: {
                 (value: Bool) in
-                rub.state = .ended
+                self.PantEffectPlayer.pause()
+                self.animateBark(imageView: self.dog_image_view, images: self.bark_images)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.backgroundAnimated = UIView.animate(withDuration: 3, delay: 0, options: .transitionCrossDissolve, animations: {
+                        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                    }, completion: nil);
+                    rub.state = .ended
+                }
             })
             break
         case .changed: break
         case .ended:
-            PantEffectPlayer.pause()
+            animate(imageView: dog_image_view, images: idle_images)
+                 break
+        case .possible: break
+        case .cancelled:
+            self.PantEffectPlayer.pause()
             animate(imageView: dog_image_view, images: idle_images)
             backgroundAnimated = UIView.animate(withDuration: 2, delay: 0, options: .transitionCrossDissolve, animations: {
                 self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            }, completion: nil)
+            }, completion: nil);
             break
-        case .possible: break
-        case .cancelled: break
         case .failed: break
         @unknown default: break
         }
@@ -147,7 +167,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
 
 }
 
