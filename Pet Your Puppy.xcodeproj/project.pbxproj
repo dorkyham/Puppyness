@@ -20,12 +20,12 @@
 		B05B0C9B2291372F001217D5 /* Dog Bark 8.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C922291372F001217D5 /* Dog Bark 8.png */; };
 		B05B0C9C2291372F001217D5 /* Dog Bark 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0C932291372F001217D5 /* Dog Bark 3.png */; };
 		B05B0CA222913E88001217D5 /* puppy_bark2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */; };
-		B05B0CAD229150D4001217D5 /* Dog and Pony Show.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CAC229150D3001217D5 /* Dog and Pony Show.mp3 */; };
 		B05B0CB12291521B001217D5 /* heart 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CAE2291521B001217D5 /* heart 2.png */; };
 		B05B0CB22291521B001217D5 /* heart 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CAF2291521B001217D5 /* heart 1.png */; };
 		B05B0CB32291521B001217D5 /* heart 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB02291521B001217D5 /* heart 3.png */; };
 		B05B0CB522915226001217D5 /* heart 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB422915226001217D5 /* heart 4.png */; };
 		B05B0CB722915285001217D5 /* Bubbles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB622915285001217D5 /* Bubbles.mp3 */; };
+		B05B0CB9229156B4001217D5 /* Dog_and_Pony_Show.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB8229156B4001217D5 /* Dog_and_Pony_Show.mp3 */; };
 		B0A0AD3D229036FB003AB50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3C229036FB003AB50B /* AppDelegate.swift */; };
 		B0A0AD3F229036FB003AB50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3E229036FB003AB50B /* ViewController.swift */; };
 		B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD40229036FB003AB50B /* Main.storyboard */; };
@@ -54,12 +54,12 @@
 		B05B0C922291372F001217D5 /* Dog Bark 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 8.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 8.png"; sourceTree = "<group>"; };
 		B05B0C932291372F001217D5 /* Dog Bark 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Bark 3.png"; path = "../../../../../Assets/Updated 1.5/Dog Bark 3.png"; sourceTree = "<group>"; };
 		B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = puppy_bark2.mp3; path = ../../../puppy_bark2.mp3; sourceTree = "<group>"; };
-		B05B0CAC229150D3001217D5 /* Dog and Pony Show.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dog and Pony Show.mp3"; path = "../../Puppyness/Puppyness/Dog and Pony Show.mp3"; sourceTree = "<group>"; };
 		B05B0CAE2291521B001217D5 /* heart 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 2.png"; path = "../../../../../Assets/Updated 1.5/heart 2.png"; sourceTree = "<group>"; };
 		B05B0CAF2291521B001217D5 /* heart 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 1.png"; path = "../../../../../Assets/Updated 1.5/heart 1.png"; sourceTree = "<group>"; };
 		B05B0CB02291521B001217D5 /* heart 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 3.png"; path = "../../../../../Assets/Updated 1.5/heart 3.png"; sourceTree = "<group>"; };
 		B05B0CB422915226001217D5 /* heart 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 4.png"; path = "../../../../../Assets/Updated 1.5/heart 4.png"; sourceTree = "<group>"; };
 		B05B0CB622915285001217D5 /* Bubbles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bubbles.mp3; path = ../../../../Downloads/Bubbles.mp3; sourceTree = "<group>"; };
+		B05B0CB8229156B4001217D5 /* Dog_and_Pony_Show.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dog_and_Pony_Show.mp3; path = ../../../../Downloads/Dog_and_Pony_Show.mp3; sourceTree = "<group>"; };
 		B0A0AD39229036FB003AB50B /* Pet Your Puppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Your Puppy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0AD3C229036FB003AB50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A0AD3E229036FB003AB50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				B0A0AD3C229036FB003AB50B /* AppDelegate.swift */,
 				B05B0CB622915285001217D5 /* Bubbles.mp3 */,
 				B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */,
-				B05B0CAC229150D3001217D5 /* Dog and Pony Show.mp3 */,
+				B05B0CB8229156B4001217D5 /* Dog_and_Pony_Show.mp3 */,
 				B0A0AD6322904064003AB50B /* dog panting.wav */,
 				B0A0AD652290406F003AB50B /* Slap.wav */,
 				B0A0AD3E229036FB003AB50B /* ViewController.swift */,
@@ -266,6 +266,7 @@
 				B0A0AD5D22903773003AB50B /* Dog Idle 3.png in Resources */,
 				B0A0AD44229036FC003AB50B /* Assets.xcassets in Resources */,
 				B05B0CA222913E88001217D5 /* puppy_bark2.mp3 in Resources */,
+				B05B0CB9229156B4001217D5 /* Dog_and_Pony_Show.mp3 in Resources */,
 				B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */,
 				B05B0C972291372F001217D5 /* Dog Bark 9.png in Resources */,
 				B05B0C89229133A3001217D5 /* Dog Touge out 1.png in Resources */,
@@ -276,7 +277,6 @@
 				B0A0AD662290406F003AB50B /* Slap.wav in Resources */,
 				B0A0AD6422904064003AB50B /* dog panting.wav in Resources */,
 				B05B0CB522915226001217D5 /* heart 4.png in Resources */,
-				B05B0CAD229150D4001217D5 /* Dog and Pony Show.mp3 in Resources */,
 				B05B0C982291372F001217D5 /* Dog Bark 6.png in Resources */,
 				B05B0C952291372F001217D5 /* Dog Bark 2.png in Resources */,
 				B05B0C962291372F001217D5 /* Dog Bark 4.png in Resources */,
