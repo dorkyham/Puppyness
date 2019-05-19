@@ -97,21 +97,31 @@ class ViewController: UIViewController {
     }
     
     @objc func handlePan(rub : UIPanGestureRecognizer){
+        let velocity = rub.velocity(in: self.view)
+        
         switch rub.state {
         case .began:
+            let magnitude = sqrt((velocity.x * velocity.x) + (velocity.y * velocity.y))
+            let rubMultiplier = magnitude / 5
+            print("magnitude: \(magnitude), rubMultiplier: \(rubMultiplier)")
+            // 2
+            let rubFactor = 0.1 * rubMultiplier
             animate(imageView: dog_image_view, images: happy_images)
             PantEffectPlayer.prepareToPlay()
             PantEffectPlayer.numberOfLoops = -1
             PantEffectPlayer.play()
-            backgroundAnimated = UIView.animate(withDuration: 1, delay: 0, options: .transitionCrossDissolve, animations: {
+            backgroundAnimated = UIView.animate(withDuration:  Double(rubFactor - 1), delay: 0, options: .transitionCrossDissolve, animations: {
                 self.view.backgroundColor = #colorLiteral(red: 1, green: 0.6257035136, blue: 0.6577243209, alpha: 1)
-            }, completion: nil)
+            }, completion: {
+                (value: Bool) in
+                rub.state = .ended
+            })
             break
         case .changed: break
         case .ended:
             PantEffectPlayer.pause()
             animate(imageView: dog_image_view, images: idle_images)
-            backgroundAnimated = UIView.animate(withDuration: 1, delay: 0, options: .transitionCrossDissolve, animations: {
+            backgroundAnimated = UIView.animate(withDuration: 2, delay: 0, options: .transitionCrossDissolve, animations: {
                 self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             }, completion: nil)
             break
