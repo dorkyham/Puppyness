@@ -60,6 +60,7 @@
 		B07DA5732292B3FB00C01A78 /* background 16.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5572292B3FB00C01A78 /* background 16.png */; };
 		B07DA5742292B3FB00C01A78 /* background 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5582292B3FB00C01A78 /* background 2.png */; };
 		B07DA5752292B3FB00C01A78 /* background 11.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5592292B3FB00C01A78 /* background 11.png */; };
+		B07DA5772292C39100C01A78 /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DA5762292C39100C01A78 /* FridgeViewController.swift */; };
 		B0A0AD3D229036FB003AB50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3C229036FB003AB50B /* AppDelegate.swift */; };
 		B0A0AD3F229036FB003AB50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3E229036FB003AB50B /* ViewController.swift */; };
 		B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD40229036FB003AB50B /* Main.storyboard */; };
@@ -128,6 +129,7 @@
 		B07DA5572292B3FB00C01A78 /* background 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 16.png"; path = "../../../../../Assets/Updated 1.5/background 16.png"; sourceTree = "<group>"; };
 		B07DA5582292B3FB00C01A78 /* background 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 2.png"; path = "../../../../../Assets/Updated 1.5/background 2.png"; sourceTree = "<group>"; };
 		B07DA5592292B3FB00C01A78 /* background 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 11.png"; path = "../../../../../Assets/Updated 1.5/background 11.png"; sourceTree = "<group>"; };
+		B07DA5762292C39100C01A78 /* FridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
 		B0A0AD39229036FB003AB50B /* Pet Your Puppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Your Puppy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0AD3C229036FB003AB50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A0AD3E229036FB003AB50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				B0A0AD43229036FC003AB50B /* Assets.xcassets */,
 				B0A0AD45229036FC003AB50B /* LaunchScreen.storyboard */,
 				B0A0AD48229036FC003AB50B /* Info.plist */,
+				B07DA5762292C39100C01A78 /* FridgeViewController.swift */,
 			);
 			path = "Pet Your Puppy";
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			files = (
 				B0A0AD3F229036FB003AB50B /* ViewController.swift in Sources */,
 				B0A0AD3D229036FB003AB50B /* AppDelegate.swift in Sources */,
+				B07DA5772292C39100C01A78 /* FridgeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

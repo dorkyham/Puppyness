@@ -16,11 +16,16 @@ class ViewController: UIViewController {
     
     @IBOutlet var background_view: UIImageView!
     @IBOutlet var tapRecognizer: UITapGestureRecognizer!
-    
-    @IBOutlet var fridgeButton: UIImageView!
-    @IBOutlet var heart_image_view: UIImageView!
     @IBOutlet var headSlappedBoundary: UIView!
     @IBOutlet var gestureBoundary: UIView!
+    
+    
+    @IBOutlet var heart_image_view: UIImageView!
+    @IBAction func fridgeButton(_ sender: Any) {
+        performSegue(withIdentifier:
+        "goToFridgePage", sender: self)
+    }
+
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
     var idle_images : [UIImage]!
     var happy_images : [UIImage]!
@@ -56,8 +61,7 @@ class ViewController: UIViewController {
         happy_images = createImageArray(total: 3, imagePrefix: "Dog Touge out")
         slapped_images = createImageArray(total: 2, imagePrefix: "Dog slapped")
         bark_images = createImageArray(total: 9, imagePrefix: "Dog Bark")
-        var _ : Timer? = Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: {_ in
-            self.animateShake(imageView: self.fridgeButton) })
+       
         loadBackground()
         animate(imageView: dog_image_view, images: idle_images)
         addTapGesture(view: headSlappedBoundary)
@@ -142,6 +146,9 @@ class ViewController: UIViewController {
         view.isUserInteractionEnabled = true
         tapRecognizer.delegate = self
         view.addGestureRecognizer(tapRecognizer)
+    }
+    
+    @objc func handleMovePage(tap : UITapGestureRecognizer){
     }
     
     @objc func handlePan(rub : UIPanGestureRecognizer){

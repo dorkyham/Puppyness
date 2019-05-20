@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C3Z-rx-S5w">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pet_Your_Puppy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Pet_Your_Puppy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,22 +34,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="420" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fridge button.png" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-6c-oIj">
-                                <rect key="frame" x="272" y="716" width="163" height="180"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ce-gb-5tP">
+                                <rect key="frame" x="277" y="719" width="158" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="fridge button.png"/>
+                                <connections>
+                                    <action selector="fridgeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QR9-n5-bAj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vQE-db-rEF"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="background_view" destination="bpf-ms-1XS" id="d6Z-xt-cpk"/>
                         <outlet property="dog_image_view" destination="Z7e-IM-Upn" id="SPZ-AV-7Ft"/>
-                        <outlet property="fridgeButton" destination="MNm-6c-oIj" id="fNg-Rt-Vti"/>
                         <outlet property="headSlappedBoundary" destination="T8h-cA-wqk" id="wmh-Wv-lyy"/>
-                        <outlet property="heart_image_view" destination="Aka-K6-1nG" id="n0V-70-aKn"/>
+                        <outlet property="heart_image_view" destination="Aka-K6-1nG" id="8uM-mn-uue"/>
                         <outlet property="panRecognizer" destination="sqa-x4-fy4" id="RJe-uS-fI6"/>
                         <outlet property="tapRecognizer" destination="gTB-Ev-s68" id="jec-Rv-8hg"/>
+                        <segue destination="Rq7-uR-smC" kind="show" identifier="goToFridgePage" id="ui3-0x-riJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -64,7 +70,41 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-154" y="26"/>
+            <point key="canvasLocation" x="111.59420289855073" y="-202.23214285714286"/>
+        </scene>
+        <!--Fridge View Controller-->
+        <scene sceneID="4xI-bq-h5f">
+            <objects>
+                <viewController storyboardIdentifier="FridgePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rq7-uR-smC" customClass="FridgeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="fridgePage" id="WYj-sM-Uf9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VJI-i3-YTy"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b99-Aw-Bfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002.8985507246377" y="-202.23214285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hzV-CM-C5i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="C3Z-rx-S5w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I4G-ZX-jxk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5I1-6P-e3H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXi-4H-MuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723.1884057971015" y="-202.23214285714286"/>
         </scene>
     </scenes>
     <resources>
