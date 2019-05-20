@@ -117,27 +117,29 @@ class ViewController: UIViewController {
     }
     
     @objc func handlePan(rub : UIPanGestureRecognizer){
-        let start : Double = Double(DispatchTime.now().uptimeNanoseconds)
-        var end : Double = 0
-        var time_interval : Double
+        var isComplete : Bool = false
         switch rub.state {
         case .began:
+            var timer : Timer? = Timer.scheduledTimer(withTimeInterval: 4, repeats: false, block: {_ in
+                isComplete = true
+                rub.state = .ended
+            })
+            if timer != nil && rub.state == .ended{
+                timer!.invalidate()
+                timer = nil
+            }
             animate(imageView: dog_image_view, images: happy_images)
             PantEffectPlayer.prepareToPlay()
             PantEffectPlayer.numberOfLoops = -1
             PantEffectPlayer.play()
             backgroundToPinkAnimated = UIView.animate(withDuration:  4, delay: 0, options: .transitionCrossDissolve, animations: {
                 self.view.backgroundColor = #colorLiteral(red: 0.9609596133, green: 0.5441862345, blue: 0.5523681641, alpha: 1)
-            }, completion: {
-               (finished: Bool) in
-                    rub.state = .ended
-            });
+            }, completion: nil)
             break
         case .changed: break
         case .ended:
-            end = Double(DispatchTime.now().uptimeNanoseconds)
-            time_interval = end - start
-            if time_interval >= 4 {
+            PantEffectPlayer.pause()
+            if (isComplete){
                 self.PantEffectPlayer.pause()
                 self.animateBark(imageView: self.dog_image_view, images: self.bark_images)
                 self.BarkEffectPlayer.play()
@@ -150,9 +152,8 @@ class ViewController: UIViewController {
                         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
                     self.BubbleEffectPlayer.pause()
                     self.heart_image_view.stopAnimating()
-            }
-            }else{
-            PantEffectPlayer.pause()
+                }
+            }else if !isComplete{
             animate(imageView: dog_image_view, images: idle_images)
             backgroundToWhiteAnimated = UIView.animate(withDuration:3, delay: 0, options: .transitionCrossDissolve, animations: {
                 self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
