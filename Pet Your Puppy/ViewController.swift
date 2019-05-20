@@ -14,8 +14,10 @@ class ViewController: UIViewController {
 
     @IBOutlet var dog_image_view: UIImageView!
     
+    @IBOutlet var background_view: UIImageView!
     @IBOutlet var tapRecognizer: UITapGestureRecognizer!
     
+    @IBOutlet var fridgeButton: UIImageView!
     @IBOutlet var heart_image_view: UIImageView!
     @IBOutlet var headSlappedBoundary: UIView!
     @IBOutlet var gestureBoundary: UIView!
@@ -25,27 +27,38 @@ class ViewController: UIViewController {
     var slapped_images : [UIImage]!
     var bark_images : [UIImage]!
     var heart_images : [UIImage]!
+    var cry_images : [UIImage]!
+    var background_images : [UIImage]!
     
     var BarkEffectPlayer = AVAudioPlayer()
     var BubbleEffectPlayer = AVAudioPlayer()
     var AudioPlayer = AVAudioPlayer()
     var PantEffectPlayer = AVAudioPlayer()
     var SlapEffectPlayer = AVAudioPlayer()
+    var CryEffectPlayer = AVAudioPlayer()
     //sound
     let dog_pant = NSURL(fileURLWithPath: Bundle.main.path(forResource: "dog panting", ofType: "wav")!)
     let slap =  NSURL(fileURLWithPath: Bundle.main.path(forResource: "Slap", ofType: "wav")!)
     let bark = NSURL(fileURLWithPath: Bundle.main.path(forResource: "puppy_bark2", ofType: "mp3")!)
     let bubble = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Bubbles", ofType: "mp3")!)
+    let cry = NSURL(fileURLWithPath: Bundle.main.path(forResource: "dog whining 2", ofType: "mp3")!)
     var backgroundToPinkAnimated : Void!
     var backgroundToWhiteAnimated : Void!
     
+    var numberOfTap : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        background_images = createImageArray(total: 24, imagePrefix: "background")
+        cry_images = createImageArray(total: 3, imagePrefix: "Dog crying")
         heart_images = createImageArray(total: 4, imagePrefix: "heart")
         idle_images = createImageArray(total: 3, imagePrefix: "Dog Idle")
         happy_images = createImageArray(total: 3, imagePrefix: "Dog Touge out")
         slapped_images = createImageArray(total: 2, imagePrefix: "Dog slapped")
         bark_images = createImageArray(total: 9, imagePrefix: "Dog Bark")
+        var _ : Timer? = Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: {_ in
+            self.animateShake(imageView: self.fridgeButton) })
+        loadBackground()
         animate(imageView: dog_image_view, images: idle_images)
         addTapGesture(view: headSlappedBoundary)
         addPanGesture(view: dog_image_view)
@@ -62,8 +75,12 @@ class ViewController: UIViewController {
         BubbleEffectPlayer = try! AVAudioPlayer(contentsOf: bubble as URL)
         BarkEffectPlayer = try! AVAudioPlayer(contentsOf: bark as URL)
         PantEffectPlayer = try! AVAudioPlayer(contentsOf: dog_pant as URL)
-        
+        CryEffectPlayer = try! AVAudioPlayer(contentsOf: cry as URL)
         SlapEffectPlayer = try! AVAudioPlayer(contentsOf: slap as URL)
+    }
+    
+    func loadBackground(){
+        animateBackground(imageView: background_view, images: background_images)
     }
     
     func createImageArray(total : Int, imagePrefix : String)-> [UIImage]{
@@ -77,7 +94,11 @@ class ViewController: UIViewController {
         }
         return imageArray
     }
-
+    func animateShake(imageView : UIImageView){
+            imageView.shake()
+       
+    }
+    
     func animate(imageView : UIImageView, images : [UIImage]){
         imageView.animationImages = images
         imageView.animationDuration = 0.4
@@ -102,6 +123,13 @@ class ViewController: UIViewController {
         }
     }
     
+    func animateBackground(imageView : UIImageView, images : [UIImage]){
+        imageView.animationImages = images
+        imageView.animationDuration = 1.2
+        imageView.animationRepeatCount = 0
+        imageView.startAnimating()
+    }
+    
     func addPanGesture(view : UIImageView){
         panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(rub:)));
         view.isUserInteractionEnabled = true
@@ -117,29 +145,9 @@ class ViewController: UIViewController {
     }
     
     @objc func handlePan(rub : UIPanGestureRecognizer){
-        var isComplete : Bool = false
         switch rub.state {
         case .began:
             var timer : Timer? = Timer.scheduledTimer(withTimeInterval: 4, repeats: false, block: {_ in
-                isComplete = true
-                rub.state = .ended
-            })
-            if timer != nil && rub.state == .ended{
-                timer!.invalidate()
-                timer = nil
-            }
-            animate(imageView: dog_image_view, images: happy_images)
-            PantEffectPlayer.prepareToPlay()
-            PantEffectPlayer.numberOfLoops = -1
-            PantEffectPlayer.play()
-            backgroundToPinkAnimated = UIView.animate(withDuration:  4, delay: 0, options: .transitionCrossDissolve, animations: {
-                self.view.backgroundColor = #colorLiteral(red: 0.9609596133, green: 0.5441862345, blue: 0.5523681641, alpha: 1)
-            }, completion: nil)
-            break
-        case .changed: break
-        case .ended:
-            PantEffectPlayer.pause()
-            if (isComplete){
                 self.PantEffectPlayer.pause()
                 self.animateBark(imageView: self.dog_image_view, images: self.bark_images)
                 self.BarkEffectPlayer.play()
@@ -147,17 +155,23 @@ class ViewController: UIViewController {
                 self.BubbleEffectPlayer.play()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     self.animate(imageView: self.dog_image_view, images: self.idle_images)
-                    
-                    self.backgroundToWhiteAnimated = UIView.animate(withDuration: 3, delay: 0, options: .transitionCrossDissolve, animations: {
-                        self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
                     self.BubbleEffectPlayer.pause()
                     self.heart_image_view.stopAnimating()
                 }
-            }else if !isComplete{
-            animate(imageView: dog_image_view, images: idle_images)
-            backgroundToWhiteAnimated = UIView.animate(withDuration:3, delay: 0, options: .transitionCrossDissolve, animations: {
-                self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }, completion: nil);
+            })
+            if timer != nil && rub.state == .ended{
+                timer?.invalidate()
+                timer = nil
             }
+            animate(imageView: dog_image_view, images: happy_images)
+            PantEffectPlayer.prepareToPlay()
+            PantEffectPlayer.numberOfLoops = -1
+            PantEffectPlayer.play()
+            break
+        case .changed: break
+        case .ended:
+            PantEffectPlayer.pause()
+            animate(imageView: dog_image_view, images: idle_images)
             break
         case .possible: break
         case .cancelled: break
@@ -166,15 +180,27 @@ class ViewController: UIViewController {
         }
     }
     @objc func handleTap(slap : UITapGestureRecognizer){
+        
         if slap.state == .ended || slap.state == .possible || slap.state == .changed {
             animateReaction(imageView: dog_image_view, images: slapped_images)
             SlapEffectPlayer.play()
+            numberOfTap+=1
+            if(numberOfTap >= 5){
+                animate(imageView: dog_image_view, images: cry_images)
+                CryEffectPlayer.play()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    self.numberOfTap = 0
+                    self.animate(imageView: self.dog_image_view, images: self.idle_images)
+                }
+            }
+            else if numberOfTap < 5{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    self.animate(imageView: self.dog_image_view, images: self.idle_images)
+                }
+                
+            }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { // Change `2.0` to the desired number of seconds.
-            //            self.animationSlappedView.isHidden = true
-            self.animate(imageView: self.dog_image_view, images: self.idle_images)
-        }
         
     }
     
@@ -188,5 +214,15 @@ extension ViewController: UIGestureRecognizerDelegate {
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
+    }
+}
+
+extension UIView {
+    func shake() {
+        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.duration = 0.8
+        animation.values = [-10.0, 10.0, -10.0, 10.0, -5.0, 5.0, -5.0, 5.0, 0.0 ]
+        layer.add(animation, forKey: "shake")
     }
 }

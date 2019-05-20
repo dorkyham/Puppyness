@@ -26,6 +26,40 @@
 		B05B0CB522915226001217D5 /* heart 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB422915226001217D5 /* heart 4.png */; };
 		B05B0CB722915285001217D5 /* Bubbles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB622915285001217D5 /* Bubbles.mp3 */; };
 		B05B0CB9229156B4001217D5 /* Dog_and_Pony_Show.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB8229156B4001217D5 /* Dog_and_Pony_Show.mp3 */; };
+		B07DA4AA2292707800C01A78 /* Dog crying 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4A72292707800C01A78 /* Dog crying 1.png */; };
+		B07DA4AB2292707800C01A78 /* Dog crying 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4A82292707800C01A78 /* Dog crying 2.png */; };
+		B07DA4AC2292707800C01A78 /* Dog crying 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4A92292707800C01A78 /* Dog crying 3.png */; };
+		B07DA4AE2292730E00C01A78 /* dog whining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4AD2292730D00C01A78 /* dog whining.mp3 */; };
+		B07DA4B02292764400C01A78 /* dog whining 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4AF2292764400C01A78 /* dog whining 2.mp3 */; };
+		B07DA4B422927E9D00C01A78 /* fridge button.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4B322927E9D00C01A78 /* fridge button.png */; };
+		B07DA55A2292B3FB00C01A78 /* background 12.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA53E2292B3FA00C01A78 /* background 12.png */; };
+		B07DA55B2292B3FB00C01A78 /* background 21.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA53F2292B3FA00C01A78 /* background 21.png */; };
+		B07DA55C2292B3FB00C01A78 /* background 27.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5402292B3FA00C01A78 /* background 27.png */; };
+		B07DA55D2292B3FB00C01A78 /* background 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5412292B3FA00C01A78 /* background 3.png */; };
+		B07DA55E2292B3FB00C01A78 /* background 7.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5422292B3FA00C01A78 /* background 7.png */; };
+		B07DA55F2292B3FB00C01A78 /* background 10.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5432292B3FA00C01A78 /* background 10.png */; };
+		B07DA5602292B3FB00C01A78 /* background 15.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5442292B3FA00C01A78 /* background 15.png */; };
+		B07DA5612292B3FB00C01A78 /* background 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5452292B3FA00C01A78 /* background 4.png */; };
+		B07DA5622292B3FB00C01A78 /* background 26.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5462292B3FA00C01A78 /* background 26.png */; };
+		B07DA5632292B3FB00C01A78 /* background 20.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5472292B3FA00C01A78 /* background 20.png */; };
+		B07DA5642292B3FB00C01A78 /* background 18.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5482292B3FA00C01A78 /* background 18.png */; };
+		B07DA5652292B3FB00C01A78 /* background 22.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5492292B3FA00C01A78 /* background 22.png */; };
+		B07DA5662292B3FB00C01A78 /* background 5.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA54A2292B3FA00C01A78 /* background 5.png */; };
+		B07DA5672292B3FB00C01A78 /* background 23.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA54B2292B3FA00C01A78 /* background 23.png */; };
+		B07DA5682292B3FB00C01A78 /* background 6.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA54C2292B3FA00C01A78 /* background 6.png */; };
+		B07DA5692292B3FB00C01A78 /* background 9.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA54D2292B3FA00C01A78 /* background 9.png */; };
+		B07DA56A2292B3FB00C01A78 /* background 13.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA54E2292B3FA00C01A78 /* background 13.png */; };
+		B07DA56B2292B3FB00C01A78 /* background 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA54F2292B3FA00C01A78 /* background 1.png */; };
+		B07DA56C2292B3FB00C01A78 /* background 8.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5502292B3FB00C01A78 /* background 8.png */; };
+		B07DA56D2292B3FB00C01A78 /* background 14.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5512292B3FB00C01A78 /* background 14.png */; };
+		B07DA56E2292B3FB00C01A78 /* background 25.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5522292B3FB00C01A78 /* background 25.png */; };
+		B07DA56F2292B3FB00C01A78 /* background 17.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5532292B3FB00C01A78 /* background 17.png */; };
+		B07DA5702292B3FB00C01A78 /* background 28.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5542292B3FB00C01A78 /* background 28.png */; };
+		B07DA5712292B3FB00C01A78 /* background 24.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5552292B3FB00C01A78 /* background 24.png */; };
+		B07DA5722292B3FB00C01A78 /* background 19.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5562292B3FB00C01A78 /* background 19.png */; };
+		B07DA5732292B3FB00C01A78 /* background 16.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5572292B3FB00C01A78 /* background 16.png */; };
+		B07DA5742292B3FB00C01A78 /* background 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5582292B3FB00C01A78 /* background 2.png */; };
+		B07DA5752292B3FB00C01A78 /* background 11.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5592292B3FB00C01A78 /* background 11.png */; };
 		B0A0AD3D229036FB003AB50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3C229036FB003AB50B /* AppDelegate.swift */; };
 		B0A0AD3F229036FB003AB50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3E229036FB003AB50B /* ViewController.swift */; };
 		B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD40229036FB003AB50B /* Main.storyboard */; };
@@ -60,6 +94,40 @@
 		B05B0CB422915226001217D5 /* heart 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 4.png"; path = "../../../../../Assets/Updated 1.5/heart 4.png"; sourceTree = "<group>"; };
 		B05B0CB622915285001217D5 /* Bubbles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bubbles.mp3; path = ../../../../Downloads/Bubbles.mp3; sourceTree = "<group>"; };
 		B05B0CB8229156B4001217D5 /* Dog_and_Pony_Show.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dog_and_Pony_Show.mp3; path = ../../../../Downloads/Dog_and_Pony_Show.mp3; sourceTree = "<group>"; };
+		B07DA4A72292707800C01A78 /* Dog crying 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog crying 1.png"; path = "../../../../../Assets/Updated 1.5/Dog crying 1.png"; sourceTree = "<group>"; };
+		B07DA4A82292707800C01A78 /* Dog crying 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog crying 2.png"; path = "../../../../../Assets/Updated 1.5/Dog crying 2.png"; sourceTree = "<group>"; };
+		B07DA4A92292707800C01A78 /* Dog crying 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog crying 3.png"; path = "../../../../../Assets/Updated 1.5/Dog crying 3.png"; sourceTree = "<group>"; };
+		B07DA4AD2292730D00C01A78 /* dog whining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "dog whining.mp3"; path = "../../../dog whining.mp3"; sourceTree = "<group>"; };
+		B07DA4AF2292764400C01A78 /* dog whining 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "dog whining 2.mp3"; path = "../../../dog whining 2.mp3"; sourceTree = "<group>"; };
+		B07DA4B322927E9D00C01A78 /* fridge button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fridge button.png"; path = "../../../Assets/Updated 1.5/fridge button.png"; sourceTree = "<group>"; };
+		B07DA53E2292B3FA00C01A78 /* background 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 12.png"; path = "../../../../../Assets/Updated 1.5/background 12.png"; sourceTree = "<group>"; };
+		B07DA53F2292B3FA00C01A78 /* background 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 21.png"; path = "../../../../../Assets/Updated 1.5/background 21.png"; sourceTree = "<group>"; };
+		B07DA5402292B3FA00C01A78 /* background 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 27.png"; path = "../../../../../Assets/Updated 1.5/background 27.png"; sourceTree = "<group>"; };
+		B07DA5412292B3FA00C01A78 /* background 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 3.png"; path = "../../../../../Assets/Updated 1.5/background 3.png"; sourceTree = "<group>"; };
+		B07DA5422292B3FA00C01A78 /* background 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 7.png"; path = "../../../../../Assets/Updated 1.5/background 7.png"; sourceTree = "<group>"; };
+		B07DA5432292B3FA00C01A78 /* background 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 10.png"; path = "../../../../../Assets/Updated 1.5/background 10.png"; sourceTree = "<group>"; };
+		B07DA5442292B3FA00C01A78 /* background 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 15.png"; path = "../../../../../Assets/Updated 1.5/background 15.png"; sourceTree = "<group>"; };
+		B07DA5452292B3FA00C01A78 /* background 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 4.png"; path = "../../../../../Assets/Updated 1.5/background 4.png"; sourceTree = "<group>"; };
+		B07DA5462292B3FA00C01A78 /* background 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 26.png"; path = "../../../../../Assets/Updated 1.5/background 26.png"; sourceTree = "<group>"; };
+		B07DA5472292B3FA00C01A78 /* background 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 20.png"; path = "../../../../../Assets/Updated 1.5/background 20.png"; sourceTree = "<group>"; };
+		B07DA5482292B3FA00C01A78 /* background 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 18.png"; path = "../../../../../Assets/Updated 1.5/background 18.png"; sourceTree = "<group>"; };
+		B07DA5492292B3FA00C01A78 /* background 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 22.png"; path = "../../../../../Assets/Updated 1.5/background 22.png"; sourceTree = "<group>"; };
+		B07DA54A2292B3FA00C01A78 /* background 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 5.png"; path = "../../../../../Assets/Updated 1.5/background 5.png"; sourceTree = "<group>"; };
+		B07DA54B2292B3FA00C01A78 /* background 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 23.png"; path = "../../../../../Assets/Updated 1.5/background 23.png"; sourceTree = "<group>"; };
+		B07DA54C2292B3FA00C01A78 /* background 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 6.png"; path = "../../../../../Assets/Updated 1.5/background 6.png"; sourceTree = "<group>"; };
+		B07DA54D2292B3FA00C01A78 /* background 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 9.png"; path = "../../../../../Assets/Updated 1.5/background 9.png"; sourceTree = "<group>"; };
+		B07DA54E2292B3FA00C01A78 /* background 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 13.png"; path = "../../../../../Assets/Updated 1.5/background 13.png"; sourceTree = "<group>"; };
+		B07DA54F2292B3FA00C01A78 /* background 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 1.png"; path = "../../../../../Assets/Updated 1.5/background 1.png"; sourceTree = "<group>"; };
+		B07DA5502292B3FB00C01A78 /* background 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 8.png"; path = "../../../../../Assets/Updated 1.5/background 8.png"; sourceTree = "<group>"; };
+		B07DA5512292B3FB00C01A78 /* background 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 14.png"; path = "../../../../../Assets/Updated 1.5/background 14.png"; sourceTree = "<group>"; };
+		B07DA5522292B3FB00C01A78 /* background 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 25.png"; path = "../../../../../Assets/Updated 1.5/background 25.png"; sourceTree = "<group>"; };
+		B07DA5532292B3FB00C01A78 /* background 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 17.png"; path = "../../../../../Assets/Updated 1.5/background 17.png"; sourceTree = "<group>"; };
+		B07DA5542292B3FB00C01A78 /* background 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 28.png"; path = "../../../../../Assets/Updated 1.5/background 28.png"; sourceTree = "<group>"; };
+		B07DA5552292B3FB00C01A78 /* background 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 24.png"; path = "../../../../../Assets/Updated 1.5/background 24.png"; sourceTree = "<group>"; };
+		B07DA5562292B3FB00C01A78 /* background 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 19.png"; path = "../../../../../Assets/Updated 1.5/background 19.png"; sourceTree = "<group>"; };
+		B07DA5572292B3FB00C01A78 /* background 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 16.png"; path = "../../../../../Assets/Updated 1.5/background 16.png"; sourceTree = "<group>"; };
+		B07DA5582292B3FB00C01A78 /* background 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 2.png"; path = "../../../../../Assets/Updated 1.5/background 2.png"; sourceTree = "<group>"; };
+		B07DA5592292B3FB00C01A78 /* background 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 11.png"; path = "../../../../../Assets/Updated 1.5/background 11.png"; sourceTree = "<group>"; };
 		B0A0AD39229036FB003AB50B /* Pet Your Puppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Your Puppy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0AD3C229036FB003AB50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A0AD3E229036FB003AB50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +166,51 @@
 			path = Heart;
 			sourceTree = "<group>";
 		};
+		B07DA4A62292704500C01A78 /* Dog-Cry */ = {
+			isa = PBXGroup;
+			children = (
+				B07DA4A72292707800C01A78 /* Dog crying 1.png */,
+				B07DA4A82292707800C01A78 /* Dog crying 2.png */,
+				B07DA4A92292707800C01A78 /* Dog crying 3.png */,
+			);
+			path = "Dog-Cry";
+			sourceTree = "<group>";
+		};
+		B07DA4B522929B7C00C01A78 /* background */ = {
+			isa = PBXGroup;
+			children = (
+				B07DA54F2292B3FA00C01A78 /* background 1.png */,
+				B07DA5582292B3FB00C01A78 /* background 2.png */,
+				B07DA5412292B3FA00C01A78 /* background 3.png */,
+				B07DA5452292B3FA00C01A78 /* background 4.png */,
+				B07DA54A2292B3FA00C01A78 /* background 5.png */,
+				B07DA54C2292B3FA00C01A78 /* background 6.png */,
+				B07DA5422292B3FA00C01A78 /* background 7.png */,
+				B07DA5502292B3FB00C01A78 /* background 8.png */,
+				B07DA54D2292B3FA00C01A78 /* background 9.png */,
+				B07DA5432292B3FA00C01A78 /* background 10.png */,
+				B07DA5592292B3FB00C01A78 /* background 11.png */,
+				B07DA53E2292B3FA00C01A78 /* background 12.png */,
+				B07DA54E2292B3FA00C01A78 /* background 13.png */,
+				B07DA5512292B3FB00C01A78 /* background 14.png */,
+				B07DA5442292B3FA00C01A78 /* background 15.png */,
+				B07DA5572292B3FB00C01A78 /* background 16.png */,
+				B07DA5532292B3FB00C01A78 /* background 17.png */,
+				B07DA5482292B3FA00C01A78 /* background 18.png */,
+				B07DA5562292B3FB00C01A78 /* background 19.png */,
+				B07DA5472292B3FA00C01A78 /* background 20.png */,
+				B07DA53F2292B3FA00C01A78 /* background 21.png */,
+				B07DA5492292B3FA00C01A78 /* background 22.png */,
+				B07DA54B2292B3FA00C01A78 /* background 23.png */,
+				B07DA5552292B3FB00C01A78 /* background 24.png */,
+				B07DA5522292B3FB00C01A78 /* background 25.png */,
+				B07DA5462292B3FA00C01A78 /* background 26.png */,
+				B07DA5402292B3FA00C01A78 /* background 27.png */,
+				B07DA5542292B3FB00C01A78 /* background 28.png */,
+			);
+			path = background;
+			sourceTree = "<group>";
+		};
 		B0A0AD30229036FB003AB50B = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +236,10 @@
 				B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */,
 				B05B0CB8229156B4001217D5 /* Dog_and_Pony_Show.mp3 */,
 				B0A0AD6322904064003AB50B /* dog panting.wav */,
+				B07DA4AD2292730D00C01A78 /* dog whining.mp3 */,
 				B0A0AD652290406F003AB50B /* Slap.wav */,
 				B0A0AD3E229036FB003AB50B /* ViewController.swift */,
+				B07DA4AF2292764400C01A78 /* dog whining 2.mp3 */,
 				B0A0AD40229036FB003AB50B /* Main.storyboard */,
 				B0A0AD43229036FC003AB50B /* Assets.xcassets */,
 				B0A0AD45229036FC003AB50B /* LaunchScreen.storyboard */,
@@ -136,6 +251,7 @@
 		B0A0AD4E2290370E003AB50B /* Image-Animation */ = {
 			isa = PBXGroup;
 			children = (
+				B07DA4B322927E9D00C01A78 /* fridge button.png */,
 				B0A0AD4F2290373A003AB50B /* Sprites */,
 			);
 			path = "Image-Animation";
@@ -144,6 +260,8 @@
 		B0A0AD4F2290373A003AB50B /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				B07DA4B522929B7C00C01A78 /* background */,
+				B07DA4A62292704500C01A78 /* Dog-Cry */,
 				B05B0CA322914E03001217D5 /* Heart */,
 				B0B8B8172290F9FD0051A1F5 /* Dog-Bark */,
 				B0A0AD522290375C003AB50B /* Dog-Slapped */,
@@ -256,35 +374,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07DA5732292B3FB00C01A78 /* background 16.png in Resources */,
+				B07DA56A2292B3FB00C01A78 /* background 13.png in Resources */,
 				B05B0CB32291521B001217D5 /* heart 3.png in Resources */,
+				B07DA56F2292B3FB00C01A78 /* background 17.png in Resources */,
+				B07DA55F2292B3FB00C01A78 /* background 10.png in Resources */,
 				B05B0C9C2291372F001217D5 /* Dog Bark 3.png in Resources */,
 				B0A0AD47229036FC003AB50B /* LaunchScreen.storyboard in Resources */,
+				B07DA56D2292B3FB00C01A78 /* background 14.png in Resources */,
 				B05B0CB12291521B001217D5 /* heart 2.png in Resources */,
 				B0A0AD622290377A003AB50B /* Dog slapped 1.png in Resources */,
 				B0A0AD612290377A003AB50B /* Dog slapped 2.png in Resources */,
 				B0A0AD5C22903773003AB50B /* Dog Idle 2.png in Resources */,
+				B07DA5632292B3FB00C01A78 /* background 20.png in Resources */,
+				B07DA56B2292B3FB00C01A78 /* background 1.png in Resources */,
 				B0A0AD5D22903773003AB50B /* Dog Idle 3.png in Resources */,
 				B0A0AD44229036FC003AB50B /* Assets.xcassets in Resources */,
+				B07DA56C2292B3FB00C01A78 /* background 8.png in Resources */,
+				B07DA4AB2292707800C01A78 /* Dog crying 2.png in Resources */,
 				B05B0CA222913E88001217D5 /* puppy_bark2.mp3 in Resources */,
+				B07DA55A2292B3FB00C01A78 /* background 12.png in Resources */,
 				B05B0CB9229156B4001217D5 /* Dog_and_Pony_Show.mp3 in Resources */,
+				B07DA5742292B3FB00C01A78 /* background 2.png in Resources */,
+				B07DA5602292B3FB00C01A78 /* background 15.png in Resources */,
+				B07DA5752292B3FB00C01A78 /* background 11.png in Resources */,
 				B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */,
 				B05B0C972291372F001217D5 /* Dog Bark 9.png in Resources */,
 				B05B0C89229133A3001217D5 /* Dog Touge out 1.png in Resources */,
 				B05B0CB722915285001217D5 /* Bubbles.mp3 in Resources */,
 				B05B0C992291372F001217D5 /* Dog Bark 7.png in Resources */,
+				B07DA5672292B3FB00C01A78 /* background 23.png in Resources */,
+				B07DA55E2292B3FB00C01A78 /* background 7.png in Resources */,
+				B07DA56E2292B3FB00C01A78 /* background 25.png in Resources */,
 				B05B0C88229133A3001217D5 /* Dog Touge out 3.png in Resources */,
 				B05B0C942291372F001217D5 /* Dog Bark 1.png in Resources */,
 				B0A0AD662290406F003AB50B /* Slap.wav in Resources */,
+				B07DA55C2292B3FB00C01A78 /* background 27.png in Resources */,
+				B07DA4B422927E9D00C01A78 /* fridge button.png in Resources */,
+				B07DA5692292B3FB00C01A78 /* background 9.png in Resources */,
 				B0A0AD6422904064003AB50B /* dog panting.wav in Resources */,
+				B07DA5712292B3FB00C01A78 /* background 24.png in Resources */,
+				B07DA5612292B3FB00C01A78 /* background 4.png in Resources */,
 				B05B0CB522915226001217D5 /* heart 4.png in Resources */,
 				B05B0C982291372F001217D5 /* Dog Bark 6.png in Resources */,
 				B05B0C952291372F001217D5 /* Dog Bark 2.png in Resources */,
+				B07DA5682292B3FB00C01A78 /* background 6.png in Resources */,
 				B05B0C962291372F001217D5 /* Dog Bark 4.png in Resources */,
+				B07DA5622292B3FB00C01A78 /* background 26.png in Resources */,
+				B07DA4AA2292707800C01A78 /* Dog crying 1.png in Resources */,
 				B05B0C9A2291372F001217D5 /* Dog Bark 5.png in Resources */,
 				B05B0C8A229133A3001217D5 /* Dog Touge out 2.png in Resources */,
+				B07DA5702292B3FB00C01A78 /* background 28.png in Resources */,
+				B07DA4AC2292707800C01A78 /* Dog crying 3.png in Resources */,
+				B07DA55B2292B3FB00C01A78 /* background 21.png in Resources */,
+				B07DA5722292B3FB00C01A78 /* background 19.png in Resources */,
+				B07DA5652292B3FB00C01A78 /* background 22.png in Resources */,
+				B07DA5662292B3FB00C01A78 /* background 5.png in Resources */,
+				B07DA4AE2292730E00C01A78 /* dog whining.mp3 in Resources */,
 				B0A0AD5E22903773003AB50B /* Dog Idle 1.png in Resources */,
 				B05B0C9B2291372F001217D5 /* Dog Bark 8.png in Resources */,
 				B05B0CB22291521B001217D5 /* heart 1.png in Resources */,
+				B07DA5642292B3FB00C01A78 /* background 18.png in Resources */,
+				B07DA55D2292B3FB00C01A78 /* background 3.png in Resources */,
+				B07DA4B02292764400C01A78 /* dog whining 2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

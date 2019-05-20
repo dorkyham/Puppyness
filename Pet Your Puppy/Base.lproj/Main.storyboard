@@ -18,16 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-ms-1XS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dog Idle 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7e-IM-Upn">
-                                <rect key="frame" x="20" y="266" width="374" height="364"/>
+                                <rect key="frame" x="-20" y="267" width="455" height="458"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-cA-wqk">
-                                <rect key="frame" x="111" y="316" width="180" height="160"/>
+                                <rect key="frame" x="100" y="342" width="201" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aka-K6-1nG">
-                                <rect key="frame" x="-6" y="0.0" width="420" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fridge button.png" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-6c-oIj">
+                                <rect key="frame" x="272" y="716" width="163" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -35,8 +43,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="background_view" destination="bpf-ms-1XS" id="d6Z-xt-cpk"/>
                         <outlet property="dog_image_view" destination="Z7e-IM-Upn" id="SPZ-AV-7Ft"/>
-                        <outlet property="headSlappedBoundary" destination="T8h-cA-wqk" id="Oxv-af-spg"/>
+                        <outlet property="fridgeButton" destination="MNm-6c-oIj" id="fNg-Rt-Vti"/>
+                        <outlet property="headSlappedBoundary" destination="T8h-cA-wqk" id="wmh-Wv-lyy"/>
                         <outlet property="heart_image_view" destination="Aka-K6-1nG" id="n0V-70-aKn"/>
                         <outlet property="panRecognizer" destination="sqa-x4-fy4" id="RJe-uS-fI6"/>
                         <outlet property="tapRecognizer" destination="gTB-Ev-s68" id="jec-Rv-8hg"/>
@@ -54,10 +64,12 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+            <point key="canvasLocation" x="-154" y="26"/>
         </scene>
     </scenes>
     <resources>
         <image name="Dog Idle 1.png" width="616" height="564"/>
+        <image name="background 1.png" width="828" height="1792"/>
+        <image name="fridge button.png" width="616" height="564"/>
     </resources>
 </document>
