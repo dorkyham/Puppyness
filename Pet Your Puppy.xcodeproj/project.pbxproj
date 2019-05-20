@@ -61,6 +61,9 @@
 		B07DA5742292B3FB00C01A78 /* background 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5582292B3FB00C01A78 /* background 2.png */; };
 		B07DA5752292B3FB00C01A78 /* background 11.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5592292B3FB00C01A78 /* background 11.png */; };
 		B07DA5772292C39100C01A78 /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DA5762292C39100C01A78 /* FridgeViewController.swift */; };
+		B07DA5792292D95D00C01A78 /* Refrigerator.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA5782292D95D00C01A78 /* Refrigerator.png */; };
+		B07DA57B2292D97100C01A78 /* meat.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA57A2292D97100C01A78 /* meat.png */; };
+		B07DA57D2292DDAB00C01A78 /* refrigerator.wav in Resources */ = {isa = PBXBuildFile; fileRef = B07DA57C2292DDAB00C01A78 /* refrigerator.wav */; };
 		B0A0AD3D229036FB003AB50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3C229036FB003AB50B /* AppDelegate.swift */; };
 		B0A0AD3F229036FB003AB50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A0AD3E229036FB003AB50B /* ViewController.swift */; };
 		B0A0AD42229036FB003AB50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A0AD40229036FB003AB50B /* Main.storyboard */; };
@@ -130,6 +133,9 @@
 		B07DA5582292B3FB00C01A78 /* background 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 2.png"; path = "../../../../../Assets/Updated 1.5/background 2.png"; sourceTree = "<group>"; };
 		B07DA5592292B3FB00C01A78 /* background 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background 11.png"; path = "../../../../../Assets/Updated 1.5/background 11.png"; sourceTree = "<group>"; };
 		B07DA5762292C39100C01A78 /* FridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
+		B07DA5782292D95D00C01A78 /* Refrigerator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refrigerator.png; path = "../../../Assets/Updated 1.5/Refrigerator.png"; sourceTree = "<group>"; };
+		B07DA57A2292D97100C01A78 /* meat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = meat.png; path = "../../../Assets/Updated 1.5/meat.png"; sourceTree = "<group>"; };
+		B07DA57C2292DDAB00C01A78 /* refrigerator.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = refrigerator.wav; path = ../../../../Downloads/refrigerator.wav; sourceTree = "<group>"; };
 		B0A0AD39229036FB003AB50B /* Pet Your Puppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Your Puppy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A0AD3C229036FB003AB50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A0AD3E229036FB003AB50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +240,7 @@
 			children = (
 				B0A0AD4E2290370E003AB50B /* Image-Animation */,
 				B0A0AD3C229036FB003AB50B /* AppDelegate.swift */,
+				B07DA57C2292DDAB00C01A78 /* refrigerator.wav */,
 				B05B0CB622915285001217D5 /* Bubbles.mp3 */,
 				B05B0CA122913E88001217D5 /* puppy_bark2.mp3 */,
 				B05B0CB8229156B4001217D5 /* Dog_and_Pony_Show.mp3 */,
@@ -255,6 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				B07DA4B322927E9D00C01A78 /* fridge button.png */,
+				B07DA5782292D95D00C01A78 /* Refrigerator.png */,
+				B07DA57A2292D97100C01A78 /* meat.png */,
 				B0A0AD4F2290373A003AB50B /* Sprites */,
 			);
 			path = "Image-Animation";
@@ -388,8 +397,10 @@
 				B05B0CB12291521B001217D5 /* heart 2.png in Resources */,
 				B0A0AD622290377A003AB50B /* Dog slapped 1.png in Resources */,
 				B0A0AD612290377A003AB50B /* Dog slapped 2.png in Resources */,
+				B07DA57B2292D97100C01A78 /* meat.png in Resources */,
 				B0A0AD5C22903773003AB50B /* Dog Idle 2.png in Resources */,
 				B07DA5632292B3FB00C01A78 /* background 20.png in Resources */,
+				B07DA57D2292DDAB00C01A78 /* refrigerator.wav in Resources */,
 				B07DA56B2292B3FB00C01A78 /* background 1.png in Resources */,
 				B0A0AD5D22903773003AB50B /* Dog Idle 3.png in Resources */,
 				B0A0AD44229036FC003AB50B /* Assets.xcassets in Resources */,
@@ -424,6 +435,7 @@
 				B07DA5682292B3FB00C01A78 /* background 6.png in Resources */,
 				B05B0C962291372F001217D5 /* Dog Bark 4.png in Resources */,
 				B07DA5622292B3FB00C01A78 /* background 26.png in Resources */,
+				B07DA5792292D95D00C01A78 /* Refrigerator.png in Resources */,
 				B07DA4AA2292707800C01A78 /* Dog crying 1.png in Resources */,
 				B05B0C9A2291372F001217D5 /* Dog Bark 5.png in Resources */,
 				B05B0C8A229133A3001217D5 /* Dog Touge out 2.png in Resources */,

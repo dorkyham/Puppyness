@@ -13,37 +13,57 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Pet_Your_Puppy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPage" id="BYZ-38-t0r" customClass="ViewController" customModule="Pet_Your_Puppy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-ms-1XS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-ms-1XS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dog Idle 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7e-IM-Upn">
-                                <rect key="frame" x="-20" y="267" width="455" height="458"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-cA-wqk">
-                                <rect key="frame" x="100" y="342" width="201" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aka-K6-1nG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aka-K6-1nG">
                                 <rect key="frame" x="0.0" y="0.0" width="420" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ce-gb-5tP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ce-gb-5tP">
                                 <rect key="frame" x="277" y="719" width="158" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="cng-bE-xWE"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="fridge button.png"/>
                                 <connections>
-                                    <action selector="fridgeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QR9-n5-bAj"/>
+                                    <action selector="onGoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5L-8E-GIG"/>
+                                    <segue destination="Rq7-uR-smC" kind="presentation" identifier="fridgePageSegue" id="OUp-L5-rXF"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dog Idle 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z7e-IM-Upn">
+                                <rect key="frame" x="0.0" y="283" width="414" height="474"/>
+                            </imageView>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-cA-wqk">
+                                <rect key="frame" x="109" y="380" width="189" height="159"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bpf-ms-1XS" secondAttribute="bottom" id="3sB-6y-bdB"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0ce-gb-5tP" secondAttribute="bottom" constant="-19" id="8Gh-ll-V6T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T8h-cA-wqk" secondAttribute="trailing" constant="116" id="LCk-Hm-YBz"/>
+                            <constraint firstItem="T8h-cA-wqk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="336" id="NsT-JP-nVX"/>
+                            <constraint firstItem="Z7e-IM-Upn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="72" id="NyL-Rr-gIa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ce-gb-5tP" secondAttribute="trailing" constant="-41" id="QM8-EB-ssC"/>
+                            <constraint firstItem="bpf-ms-1XS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QaN-pI-EhO"/>
+                            <constraint firstAttribute="bottom" secondItem="T8h-cA-wqk" secondAttribute="bottom" constant="357" id="WeJ-HX-F7L"/>
+                            <constraint firstItem="bpf-ms-1XS" firstAttribute="trailing" secondItem="Z7e-IM-Upn" secondAttribute="trailing" id="Xtv-AO-lMK"/>
+                            <constraint firstItem="Aka-K6-1nG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bkU-gT-agW"/>
+                            <constraint firstItem="bpf-ms-1XS" firstAttribute="leading" secondItem="Aka-K6-1nG" secondAttribute="leading" id="d8Q-ov-AyY"/>
+                            <constraint firstItem="T8h-cA-wqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="dKy-vJ-dYA"/>
+                            <constraint firstItem="Aka-K6-1nG" firstAttribute="top" secondItem="bpf-ms-1XS" secondAttribute="top" id="efR-VQ-OAy"/>
+                            <constraint firstItem="bpf-ms-1XS" firstAttribute="leading" secondItem="Z7e-IM-Upn" secondAttribute="leading" id="f5y-0z-v74"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aka-K6-1nG" secondAttribute="trailing" constant="-26" id="g88-kK-61K"/>
+                            <constraint firstItem="Z7e-IM-Upn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="239" id="hQA-ZB-GPJ"/>
+                            <constraint firstItem="0ce-gb-5tP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="277" id="nDg-MW-0Xo"/>
+                            <constraint firstItem="0ce-gb-5tP" firstAttribute="trailing" secondItem="Z7e-IM-Upn" secondAttribute="trailing" constant="21" id="qyk-GX-guV"/>
+                            <constraint firstItem="bpf-ms-1XS" firstAttribute="bottom" secondItem="Aka-K6-1nG" secondAttribute="bottom" id="wZJ-NK-qES"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="vQE-db-rEF"/>
@@ -51,11 +71,11 @@
                     <connections>
                         <outlet property="background_view" destination="bpf-ms-1XS" id="d6Z-xt-cpk"/>
                         <outlet property="dog_image_view" destination="Z7e-IM-Upn" id="SPZ-AV-7Ft"/>
+                        <outlet property="fridgeButtonOutlet" destination="0ce-gb-5tP" id="7yv-1o-YFF"/>
                         <outlet property="headSlappedBoundary" destination="T8h-cA-wqk" id="wmh-Wv-lyy"/>
                         <outlet property="heart_image_view" destination="Aka-K6-1nG" id="8uM-mn-uue"/>
                         <outlet property="panRecognizer" destination="sqa-x4-fy4" id="RJe-uS-fI6"/>
                         <outlet property="tapRecognizer" destination="gTB-Ev-s68" id="jec-Rv-8hg"/>
-                        <segue destination="Rq7-uR-smC" kind="show" identifier="goToFridgePage" id="ui3-0x-riJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,18 +95,40 @@
         <!--Fridge View Controller-->
         <scene sceneID="4xI-bq-h5f">
             <objects>
-                <viewController storyboardIdentifier="FridgePage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rq7-uR-smC" customClass="FridgeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FridgePage" id="Rq7-uR-smC" customClass="FridgeViewController" customModule="Pet_Your_Puppy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="fridgePage" id="WYj-sM-Uf9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Refrigerator.png" translatesAutoresizingMaskIntoConstraints="NO" id="sxe-MG-eRt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meat.png" translatesAutoresizingMaskIntoConstraints="NO" id="BFI-Kj-nQT">
+                                <rect key="frame" x="-13" y="443" width="300" height="212"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sxe-MG-eRt" firstAttribute="top" secondItem="WYj-sM-Uf9" secondAttribute="top" id="HTj-KT-yd1"/>
+                            <constraint firstItem="sxe-MG-eRt" firstAttribute="leading" secondItem="WYj-sM-Uf9" secondAttribute="leading" id="RKw-sE-o26"/>
+                            <constraint firstItem="VJI-i3-YTy" firstAttribute="trailing" secondItem="BFI-Kj-nQT" secondAttribute="trailing" constant="127" id="Tki-Rg-6ri"/>
+                            <constraint firstItem="BFI-Kj-nQT" firstAttribute="leading" secondItem="WYj-sM-Uf9" secondAttribute="leadingMargin" constant="-33" id="aOE-xJ-0dS"/>
+                            <constraint firstItem="VJI-i3-YTy" firstAttribute="bottom" secondItem="BFI-Kj-nQT" secondAttribute="bottom" constant="207" id="aOo-z9-gpG"/>
+                            <constraint firstAttribute="bottom" secondItem="sxe-MG-eRt" secondAttribute="bottom" id="cgS-ap-Z5Z"/>
+                            <constraint firstItem="BFI-Kj-nQT" firstAttribute="top" secondItem="VJI-i3-YTy" secondAttribute="top" constant="399" id="uN3-xq-ldQ"/>
+                            <constraint firstAttribute="trailing" secondItem="sxe-MG-eRt" secondAttribute="trailing" id="wYU-x0-svT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VJI-i3-YTy"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="meat_view" destination="BFI-Kj-nQT" id="OHe-S6-4Ka"/>
+                        <outlet property="refrigerator_view" destination="sxe-MG-eRt" id="jGm-0R-DrC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b99-Aw-Bfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002.8985507246377" y="-202.23214285714286"/>
+            <point key="canvasLocation" x="1059" y="-202"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hzV-CM-C5i">
@@ -109,7 +151,9 @@
     </scenes>
     <resources>
         <image name="Dog Idle 1.png" width="616" height="564"/>
+        <image name="Refrigerator.png" width="828" height="1792"/>
         <image name="background 1.png" width="828" height="1792"/>
         <image name="fridge button.png" width="616" height="564"/>
+        <image name="meat.png" width="712" height="676"/>
     </resources>
 </document>

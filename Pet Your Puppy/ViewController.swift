@@ -11,22 +11,23 @@ import AVKit
 import Foundation
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var dog_image_view: UIImageView!
     
+    @IBOutlet var fridgeButtonOutlet: UIButton!
     @IBOutlet var background_view: UIImageView!
     @IBOutlet var tapRecognizer: UITapGestureRecognizer!
     @IBOutlet var headSlappedBoundary: UIView!
-    @IBOutlet var gestureBoundary: UIView!
     
+    @IBAction func onGoButton(_ sender: Any) {
+        performSegue(withIdentifier: "fridgePageSegue", sender: self)
+    }
     
     @IBOutlet var heart_image_view: UIImageView!
-    @IBAction func fridgeButton(_ sender: Any) {
-        performSegue(withIdentifier:
-        "goToFridgePage", sender: self)
-    }
+    
 
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
+    
     var idle_images : [UIImage]!
     var happy_images : [UIImage]!
     var slapped_images : [UIImage]!
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
     var numberOfTap : Int = 0
     
     override func viewDidLoad() {
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
         super.viewDidLoad()
         background_images = createImageArray(total: 24, imagePrefix: "background")
         cry_images = createImageArray(total: 3, imagePrefix: "Dog crying")
@@ -148,8 +150,6 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tapRecognizer)
     }
     
-    @objc func handleMovePage(tap : UITapGestureRecognizer){
-    }
     
     @objc func handlePan(rub : UIPanGestureRecognizer){
         switch rub.state {
