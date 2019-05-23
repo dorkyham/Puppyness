@@ -104,6 +104,7 @@ class ViewController: UIViewController {
         AudioPlayer.play()
     }
     
+    
     func loadBackground(){
         animateBackground(imageView: background_view, images: background_images)
     }

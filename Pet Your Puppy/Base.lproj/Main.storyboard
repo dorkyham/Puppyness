@@ -163,6 +163,7 @@
         <image name="meat.png" width="712" height="676"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="OUp-L5-rXF"/>
         <segue reference="k7i-nc-okW"/>
     </inferredMetricsTieBreakers>
 </document>
