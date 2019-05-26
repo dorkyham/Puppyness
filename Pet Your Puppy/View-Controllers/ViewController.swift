@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet var heart_image_view: UIImageView!
+    @IBOutlet var chicken_view: UIImageView!
     
 
     @IBOutlet var panRecognizer: UIPanGestureRecognizer!
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     var bark_images : [UIImage]!
     var heart_images : [UIImage]!
     var cry_images : [UIImage]!
+    var eat_images : [UIImage]!
     var background_images : [UIImage]!
     
     var BarkEffectPlayer = AVAudioPlayer()
@@ -45,12 +47,15 @@ class ViewController: UIViewController {
     var PantEffectPlayer = AVAudioPlayer()
     var SlapEffectPlayer = AVAudioPlayer()
     var CryEffectPlayer = AVAudioPlayer()
+    var EatEffectPlayer = AVAudioPlayer()
+    
     //sound
     let dog_pant = NSURL(fileURLWithPath: Bundle.main.path(forResource: "dog panting", ofType: "wav")!)
     let slap =  NSURL(fileURLWithPath: Bundle.main.path(forResource: "Slap", ofType: "wav")!)
     let bark = NSURL(fileURLWithPath: Bundle.main.path(forResource: "puppy_bark2", ofType: "mp3")!)
     let bubble = NSURL(fileURLWithPath: Bundle.main.path(forResource: "Bubbles", ofType: "mp3")!)
     let cry = NSURL(fileURLWithPath: Bundle.main.path(forResource: "dog whining 2", ofType: "mp3")!)
+    
     var backgroundToPinkAnimated : Void!
     var backgroundToWhiteAnimated : Void!
     
@@ -59,13 +64,15 @@ class ViewController: UIViewController {
     
     var meatIsSelected : Bool = false
     
-   
+    var chickenIsSelected : Bool = false
     
     override func viewDidLoad() {
         meat_view.isHidden = true
+        chicken_view.isHidden = true
     UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
         super.viewDidLoad()
         background_images = createImageArray(total: 24, imagePrefix: "background")
+        eat_images = createImageArray(total: 2, imagePrefix: "Dog Eat")
         cry_images = createImageArray(total: 3, imagePrefix: "Dog crying")
         heart_images = createImageArray(total: 4, imagePrefix: "heart")
         idle_images = createImageArray(total: 3, imagePrefix: "Dog Idle")
@@ -85,6 +92,11 @@ class ViewController: UIViewController {
             meat_view.isHidden = false
             addPanGesture(view: meat_view)
             view.bringSubviewToFront(meat_view)
+        }
+        if(chickenIsSelected){
+            chicken_view.isHidden = false
+            addPanGesture(view: chicken_view)
+            view.bringSubviewToFront(chicken_view)
         }
     }
     
@@ -177,7 +189,6 @@ class ViewController: UIViewController {
         let meatView = pan.view
         let translation = pan.translation(in: view)
         
-        
         switch pan.state {
         case .began, .changed:
             meatView!.center = CGPoint(x: meatView!.center.x + translation.x, y: meatView!.center.y + translation.y)
@@ -188,6 +199,7 @@ class ViewController: UIViewController {
             if meatView!.frame.intersects(headSlappedBoundary.frame){
                 UIView.animate(withDuration: 0.3, animations: {
                     self.meat_view.alpha = 0.0
+                    self.chicken_view.alpha = 0.0
                 })
                 
                 PantEffectPlayer.pause()
@@ -217,7 +229,7 @@ class ViewController: UIViewController {
     }
     @objc func handleRub(rub : UIPanGestureRecognizer){
         let translation = rub.translation(in: view)
-        if translation.x != meat_view.center.x && translation.y != meat_view.center.y{
+        if translation.x != dog_image_view.center.x && translation.y != dog_image_view.center.y{
         switch rub.state {
         case .began:
             animate(imageView: dog_image_view, images: happy_images)

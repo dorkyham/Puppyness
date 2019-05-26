@@ -15,29 +15,41 @@ class FridgeViewController : UIViewController {
     
     
     @IBOutlet var meat_view: UIImageView!
-    
-    
     @IBOutlet var refrigerator_view: UIImageView!
-    
+    @IBOutlet var chicken_btn: UIButton!
     var soundAlreadyPlayed : Bool! = false
     var FridgeSoundEffect = AVAudioPlayer()
     var fridgeSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "refrigerator", ofType: "wav")!)
+    var isMeatSelected : Bool = false
+    var isChickenSelected : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+   
+    @IBAction func chickenOnTouch(_ sender: Any) {
+        isChickenSelected = true
+        isMeatSelected = false
+        performSegue(withIdentifier: "mainPageSegue", sender: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
     UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
         addTapGesture(view: meat_view)
         pulse(view: meat_view)
+        pulseButton(view: chicken_btn)
         playSound()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mainPageSegue"{
             if let viewController = segue.destination as? ViewController {
                 viewController.backsoundAlreadyPlayed =  true
+                if isMeatSelected {
                 viewController.meatIsSelected = true
+                }
+                else if isChickenSelected {
+                viewController.chickenIsSelected = true
+                }
             }
         }
     }
@@ -55,6 +67,21 @@ class FridgeViewController : UIViewController {
             
             }, completion: nil)
     
+    }
+    
+    func pulseButton(view : UIButton) {
+        
+        UIView.animateKeyframes(withDuration: 1.5, delay: 0, options: [.allowUserInteraction, .repeat, .autoreverse], animations: {
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.5, animations: {
+                view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            })
+            
+            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 1.5, animations: {
+                self.chicken_btn.transform = CGAffineTransform.identity
+            })
+            
+        }, completion: nil)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -75,6 +102,8 @@ class FridgeViewController : UIViewController {
     }
     
     @objc func handleTap(grap : UITapGestureRecognizer){
+        isChickenSelected = false
+        isMeatSelected = true
         performSegue(withIdentifier: "mainPageSegue", sender: self)
     }
         

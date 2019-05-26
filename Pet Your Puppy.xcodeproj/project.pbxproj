@@ -30,6 +30,9 @@
 		B05B0CB22291521B001217D5 /* heart 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CAF2291521B001217D5 /* heart 1.png */; };
 		B05B0CB32291521B001217D5 /* heart 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB02291521B001217D5 /* heart 3.png */; };
 		B05B0CB522915226001217D5 /* heart 4.png in Resources */ = {isa = PBXBuildFile; fileRef = B05B0CB422915226001217D5 /* heart 4.png */; };
+		B079F5BB229AC67400922579 /* Chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = B079F5BA229AC67400922579 /* Chicken.png */; };
+		B079F5BF229ACECD00922579 /* Dog Eat 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B079F5BD229ACECD00922579 /* Dog Eat 2.png */; };
+		B079F5C0229ACECD00922579 /* Dog Eat 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B079F5BE229ACECD00922579 /* Dog Eat 1.png */; };
 		B07DA4AA2292707800C01A78 /* Dog crying 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4A72292707800C01A78 /* Dog crying 1.png */; };
 		B07DA4AB2292707800C01A78 /* Dog crying 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4A82292707800C01A78 /* Dog crying 2.png */; };
 		B07DA4AC2292707800C01A78 /* Dog crying 3.png in Resources */ = {isa = PBXBuildFile; fileRef = B07DA4A92292707800C01A78 /* Dog crying 3.png */; };
@@ -101,6 +104,9 @@
 		B05B0CAF2291521B001217D5 /* heart 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 1.png"; path = "../../../../../Assets/Updated 1.5/heart 1.png"; sourceTree = "<group>"; };
 		B05B0CB02291521B001217D5 /* heart 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 3.png"; path = "../../../../../Assets/Updated 1.5/heart 3.png"; sourceTree = "<group>"; };
 		B05B0CB422915226001217D5 /* heart 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heart 4.png"; path = "../../../../../Assets/Updated 1.5/heart 4.png"; sourceTree = "<group>"; };
+		B079F5BA229AC67400922579 /* Chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chicken.png; path = "../../../Assets/Updated 1.5/Chicken.png"; sourceTree = "<group>"; };
+		B079F5BD229ACECD00922579 /* Dog Eat 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Eat 2.png"; path = "../../../../../Assets/Updated 1.5/Dog Eat 2.png"; sourceTree = "<group>"; };
+		B079F5BE229ACECD00922579 /* Dog Eat 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog Eat 1.png"; path = "../../../../../Assets/Updated 1.5/Dog Eat 1.png"; sourceTree = "<group>"; };
 		B07DA4A72292707800C01A78 /* Dog crying 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog crying 1.png"; path = "../../../../../Assets/Updated 1.5/Dog crying 1.png"; sourceTree = "<group>"; };
 		B07DA4A82292707800C01A78 /* Dog crying 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog crying 2.png"; path = "../../../../../Assets/Updated 1.5/Dog crying 2.png"; sourceTree = "<group>"; };
 		B07DA4A92292707800C01A78 /* Dog crying 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dog crying 3.png"; path = "../../../../../Assets/Updated 1.5/Dog crying 3.png"; sourceTree = "<group>"; };
@@ -195,6 +201,15 @@
 			path = Heart;
 			sourceTree = "<group>";
 		};
+		B079F5BC229ACEA900922579 /* Dog-Eat */ = {
+			isa = PBXGroup;
+			children = (
+				B079F5BE229ACECD00922579 /* Dog Eat 1.png */,
+				B079F5BD229ACECD00922579 /* Dog Eat 2.png */,
+			);
+			path = "Dog-Eat";
+			sourceTree = "<group>";
+		};
 		B07DA4A62292704500C01A78 /* Dog-Cry */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +289,7 @@
 		B0A0AD4E2290370E003AB50B /* Image-Animation */ = {
 			isa = PBXGroup;
 			children = (
+				B079F5BA229AC67400922579 /* Chicken.png */,
 				B07DA4B322927E9D00C01A78 /* fridge button.png */,
 				B07DA5782292D95D00C01A78 /* Refrigerator.png */,
 				B07DA57A2292D97100C01A78 /* meat.png */,
@@ -285,6 +301,7 @@
 		B0A0AD4F2290373A003AB50B /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				B079F5BC229ACEA900922579 /* Dog-Eat */,
 				B07DA4B522929B7C00C01A78 /* background */,
 				B07DA4A62292704500C01A78 /* Dog-Cry */,
 				B05B0CA322914E03001217D5 /* Heart */,
@@ -432,6 +449,7 @@
 				B05B0C992291372F001217D5 /* Dog Bark 7.png in Resources */,
 				B07DA5672292B3FB00C01A78 /* background 23.png in Resources */,
 				B07DA55E2292B3FB00C01A78 /* background 7.png in Resources */,
+				B079F5BB229AC67400922579 /* Chicken.png in Resources */,
 				B07DA56E2292B3FB00C01A78 /* background 25.png in Resources */,
 				B05B0C88229133A3001217D5 /* Dog Touge out 3.png in Resources */,
 				B05B0C942291372F001217D5 /* Dog Bark 1.png in Resources */,
@@ -440,6 +458,7 @@
 				B07DA5692292B3FB00C01A78 /* background 9.png in Resources */,
 				B07DA5712292B3FB00C01A78 /* background 24.png in Resources */,
 				B03574EF2295807700F32EA0 /* dog whining 2.mp3 in Resources */,
+				B079F5BF229ACECD00922579 /* Dog Eat 2.png in Resources */,
 				B07DA5612292B3FB00C01A78 /* background 4.png in Resources */,
 				B05B0CB522915226001217D5 /* heart 4.png in Resources */,
 				B05B0C982291372F001217D5 /* Dog Bark 6.png in Resources */,
@@ -458,6 +477,7 @@
 				B07DA5722292B3FB00C01A78 /* background 19.png in Resources */,
 				B07DA5652292B3FB00C01A78 /* background 22.png in Resources */,
 				B07DA5662292B3FB00C01A78 /* background 5.png in Resources */,
+				B079F5C0229ACECD00922579 /* Dog Eat 1.png in Resources */,
 				B03574F7229580CC00F32EA0 /* refrigerator.wav in Resources */,
 				B0A0AD5E22903773003AB50B /* Dog Idle 1.png in Resources */,
 				B05B0C9B2291372F001217D5 /* Dog Bark 8.png in Resources */,

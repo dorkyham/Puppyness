@@ -45,6 +45,10 @@
                                 <rect key="frame" x="110" y="665" width="186" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chicken.png" translatesAutoresizingMaskIntoConstraints="NO" id="KRZ-5D-zmA">
+                                <rect key="frame" x="120" y="675" width="186" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -74,6 +78,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="background_view" destination="bpf-ms-1XS" id="d6Z-xt-cpk"/>
+                        <outlet property="chicken_view" destination="KRZ-5D-zmA" id="27M-9b-hOd"/>
                         <outlet property="dog_image_view" destination="Z7e-IM-Upn" id="SPZ-AV-7Ft"/>
                         <outlet property="fridgeButtonOutlet" destination="0ce-gb-5tP" id="FDD-hX-htz"/>
                         <outlet property="headSlappedBoundary" destination="T8h-cA-wqk" id="wmh-Wv-lyy"/>
@@ -111,6 +116,14 @@
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meat.png" translatesAutoresizingMaskIntoConstraints="NO" id="BFI-Kj-nQT">
                                 <rect key="frame" x="0.0" y="436" width="306" height="206"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoN-YQ-dga">
+                                <rect key="frame" x="180" y="606" width="214" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Chicken.png"/>
+                                <connections>
+                                    <action selector="chickenOnTouch:" destination="Rq7-uR-smC" eventType="touchUpInside" id="fhK-oZ-bJ6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -127,6 +140,7 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="chicken_btn" destination="xoN-YQ-dga" id="UFw-Nx-zyj"/>
                         <outlet property="meat_view" destination="BFI-Kj-nQT" id="izk-8z-rBF"/>
                         <outlet property="refrigerator_view" destination="sxe-MG-eRt" id="jGm-0R-DrC"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="mainPageSegue" id="k7i-nc-okW"/>
@@ -156,6 +170,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Chicken.png" width="712" height="676"/>
         <image name="Dog Idle 1.png" width="616" height="564"/>
         <image name="Refrigerator.png" width="828" height="1792"/>
         <image name="background 1.png" width="828" height="1792"/>
